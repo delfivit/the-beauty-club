@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>The Beauty Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
+    <nav class="header__menu">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <a href="reserva.html"><button class="header__btn">Reserva</button></a>
+  </header>
+  <main>
+    <section class="hero">
+      <h1 class="hero__title">The<br>Beauty<br>Club</h1>
+      <div class="hero__actions hero__actions--moved">
+        <a href="reserva.html"><button class="hero__btn">Reserva ahora</button></a>
+        <a href="ubicaciones.html"><button class="hero__btn">Ver Ubicaciones</button></a>
+      </div>
+    </section>
+    <section class="ubicaciones ubicaciones--no-margin">
+      <h2 class="ubicaciones__title">Estamos en Bilbao, Málaga y Cádiz</h2>
+      <div class="ubicaciones__subtitle">pero nuestra esencia es la misma en cada lugar</div>
+      <div class="ubicaciones__locals">
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-bilbao.jpg" alt="Bilbao">
+          <div class="local-title">Bilbao</div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+            C/ Máximo Aguirre 11 bis
+          </div>
+          <div class="local-contact">
+            <a href="tel:660252523" class="local-phone">660 25 25 23</a>
+          </div>
+          <div class="local-hours">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+          <button class="local-btn" onclick="showWidget('bilbao-widget', 'https://booksy.com/widget/code.js?id=63527&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="bilbao-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-cadiz.jpg" alt="Cádiz">
+          <div class="local-title">Cádiz</div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+            Avenida Cayetano del Toro 33
+          </div>
+          <div class="local-contact">
+            <a href="tel:692728828" class="local-phone">692728828</a>
+          </div>
+          <div class="local-hours">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+          <button class="local-btn" onclick="showWidget('cadiz-widget', 'https://booksy.com/widget/code.js?id=94053&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="cadiz-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-malaga.jpg" alt="Málaga">
+          <div class="local-title">Málaga</div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+            Calle Antonio Luis Carrión N9 LOCAL 2
+          </div>
+          <div class="local-contact">
+            <a href="tel:674039794" class="local-phone">674039794</a>
+          </div>
+          <div class="local-hours">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+          <button class="local-btn" onclick="showWidget('malaga-widget', 'https://booksy.com/widget/code.js?id=100020&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="malaga-widget"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Inspiración, Testimonios y Blog igual que antes... -->
+    <!-- ... -->
+  </main>
+  <footer class="footer">
+    <div>
+      <img src="./assets/img/logo-footer.png" alt="The Beauty Club" class="footer__logo">
+      <a class="footer__ig" href="https://www.instagram.com/thebeautyclub.tbc/" target="_blank">
+        <span class="footer__ig-text">@thebeautyclub.tbc</span>
+      </a>
+    </div>
+    <div class="footer__info">
+      <!-- Bilbao, Cádiz, Málaga igual que antes -->
+      <!-- ... -->
+    </div>
+  </footer>
+</body>
+</html>
