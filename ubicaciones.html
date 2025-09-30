@@ -9,18 +9,108 @@
 </head>
 <body>
   <header class="header">
-    <!-- ... igual que index ... -->
+    <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
+    <nav class="header__menu">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <a href="reserva.html"><button class="header__btn">Reserva</button></a>
   </header>
   <main>
-    <section class="ubicaciones ubicaciones--no-margin">
+    <section class="ubicaciones">
       <h2 class="ubicaciones__title">Nuestras ubicaciones</h2>
       <div class="ubicaciones__locals">
-        <!-- Bilbao, Cádiz, Málaga igual que en index ... -->
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-bilbao.jpg" alt="Bilbao">
+          <div class="local-title">Bilbao</div>
+            <div class="local-contact">
+              <a href="https://maps.app.goo.gl/aYa1UxGETPQWyDtp6" target="_blank" class="local-maps-link">
+                <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+                <span class="local-text">C/ Máximo Aguirre 11 bis</span>
+              </a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+              <a href="tel:660252523" class="local-phone">660 252 523</a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+              <span>Lun-Vie: 9:30–20:30, Sáb: 9:30–14:00, Dom: Cerrado</span>
+            </div>
+          <button class="local-btn" onclick="showWidget('bilbao-widget', 'https://booksy.com/widget/code.js?id=63527&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="bilbao-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-cadiz.jpg" alt="Cádiz">
+          <div class="local-title">Cádiz</div>
+            <div class="local-contact">
+              <a href="https://maps.app.goo.gl/svk5XNSsmjwvaET88" target="_blank" class="local-maps-link">
+                <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+                <span class="local-text">Avenida Cayetano del Toro 33</span>
+              </a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+              <a href="tel:692728828" class="local-phone">692 728 828</a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+              <span>Lun-Vie: 9:30–20:30, Sáb-Dom: Cerrado</span>
+            </div>
+          <button class="local-btn" onclick="showWidget('cadiz-widget', 'https://booksy.com/widget/code.js?id=94053&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="cadiz-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <img src="./assets/img/local-malaga.jpg" alt="Málaga">
+          <div class="local-title">Málaga</div>
+          <div class="local-contact">
+            <a href="https://maps.app.goo.gl/cxGHrVapkRJ5xD5o6" target="_blank" class="local-maps-link">
+              <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+              <span class="local-text">Calle Antonio Luis Carrión N9 local 2</span>
+            </a>
+          </div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+            <a href="tel:674039794" class="local-phone">674 039 794</a>
+          </div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+            <span>Lun, Mar, Jue, Vie: 9:30–20:30, Mié: 11:30–20:30, Sáb-Dom: Cerrado</span>
+          </div>
+          <button class="local-btn" onclick="showWidget('malaga-widget', 'https://booksy.com/widget/code.js?id=100020&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="malaga-widget"></div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <!-- igual que index ... -->
+    <div>
+      <img src="./assets/img/logo-footer.png" alt="The Beauty Club" class="footer__logo">
+      <a class="footer__ig" href="https://www.instagram.com/thebeautyclub.tbc/" target="_blank">
+        <span class="footer__ig-text">@thebeautyclub.tbc</span>
+      </a>
+    </div>
+    <div class="footer__info">
+      <div class="footer__block">
+        <div class="footer__title">Bilbao</div>
+        <div class="footer__contact">C/ Máximo Aguirre 11 bis</div>
+        <div class="footer__contact">Tel: 660 252 523</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Cádiz</div>
+        <div class="footer__contact">Avenida Cayetano del Toro 33</div>
+        <div class="footer__contact">Tel: 692 728 828</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Málaga</div>
+        <div class="footer__contact">Calle Antonio Luis Carrión N9 local 2</div>
+        <div class="footer__contact">Tel: 674 039 794</div>
+        <div class="footer__contact">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

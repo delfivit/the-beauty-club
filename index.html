@@ -19,41 +19,54 @@
   </header>
   <main>
     <section class="hero">
-      <h1 class="hero__title">The<br>Beauty<br>Club</h1>
-      <div class="hero__actions hero__actions--moved">
+      <h1 class="hero__title">the<br>Beauty<br>club</h1>
+      <div class="hero__actions">
         <a href="reserva.html"><button class="hero__btn">Reserva ahora</button></a>
         <a href="ubicaciones.html"><button class="hero__btn">Ver Ubicaciones</button></a>
       </div>
     </section>
-    <section class="ubicaciones ubicaciones--no-margin">
+
+    <section class="ubicaciones">
       <h2 class="ubicaciones__title">Estamos en Bilbao, Málaga y Cádiz</h2>
       <div class="ubicaciones__subtitle">pero nuestra esencia es la misma en cada lugar</div>
       <div class="ubicaciones__locals">
         <div class="ubicaciones__local">
           <img src="./assets/img/local-bilbao.jpg" alt="Bilbao">
           <div class="local-title">Bilbao</div>
-          <div class="local-contact">
-            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
-            C/ Máximo Aguirre 11 bis
-          </div>
-          <div class="local-contact">
-            <a href="tel:660252523" class="local-phone">660 25 25 23</a>
-          </div>
-          <div class="local-hours">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+            <div class="local-contact">
+              <a href="https://maps.app.goo.gl/aYa1UxGETPQWyDtp6" target="_blank" class="local-maps-link">
+                <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+                <span class="local-text">C/ Máximo Aguirre 11 bis</span>
+              </a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+              <a href="tel:660252523" class="local-phone">660 252 523</a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+              <span>Lun-Vie: 9:30–20:30, Sáb: 9:30–14:00, Dom: Cerrado</span>
+            </div>
           <button class="local-btn" onclick="showWidget('bilbao-widget', 'https://booksy.com/widget/code.js?id=63527&country=es&lang=es')">Reserva en Booksy</button>
           <div id="bilbao-widget"></div>
         </div>
         <div class="ubicaciones__local">
           <img src="./assets/img/local-cadiz.jpg" alt="Cádiz">
           <div class="local-title">Cádiz</div>
-          <div class="local-contact">
-            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
-            Avenida Cayetano del Toro 33
-          </div>
-          <div class="local-contact">
-            <a href="tel:692728828" class="local-phone">692728828</a>
-          </div>
-          <div class="local-hours">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+            <div class="local-contact">
+              <a href="https://maps.app.goo.gl/svk5XNSsmjwvaET88" target="_blank" class="local-maps-link">
+                <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+                <span class="local-text">Avenida Cayetano del Toro 33</span>
+              </a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+              <a href="tel:692728828" class="local-phone">692 728 828</a>
+            </div>
+            <div class="local-contact">
+              <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+              <span>Lun-Vie: 9:30–20:30, Sáb-Dom: Cerrado</span>
+            </div>
           <button class="local-btn" onclick="showWidget('cadiz-widget', 'https://booksy.com/widget/code.js?id=94053&country=es&lang=es')">Reserva en Booksy</button>
           <div id="cadiz-widget"></div>
         </div>
@@ -61,20 +74,100 @@
           <img src="./assets/img/local-malaga.jpg" alt="Málaga">
           <div class="local-title">Málaga</div>
           <div class="local-contact">
-            <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
-            Calle Antonio Luis Carrión N9 LOCAL 2
+            <a href="https://maps.app.goo.gl/cxGHrVapkRJ5xD5o6" target="_blank" class="local-maps-link">
+              <img src="./assets/img/icon-location.svg" class="icon-location" alt="ubicación">
+              <span class="local-text">Calle Antonio Luis Carrión N9 local 2</span>
+            </a>
           </div>
           <div class="local-contact">
-            <a href="tel:674039794" class="local-phone">674039794</a>
+            <img src="./assets/img/icon-phone.svg" class="icon-phone" alt="teléfono">
+            <a href="tel:674039794" class="local-phone">674 039 794</a>
           </div>
-          <div class="local-hours">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+          <div class="local-contact">
+            <img src="./assets/img/icon-clock.svg" class="icon-clock" alt="horario">
+            <span>Lun, Mar, Jue, Vie: 9:30–20:30, Mié: 11:30–20:30, Sáb-Dom: Cerrado</span>
+          </div>
           <button class="local-btn" onclick="showWidget('malaga-widget', 'https://booksy.com/widget/code.js?id=100020&country=es&lang=es')">Reserva en Booksy</button>
           <div id="malaga-widget"></div>
         </div>
       </div>
     </section>
-    <!-- Inspiración, Testimonios y Blog igual que antes... -->
-    <!-- ... -->
+
+    <section class="inspiracion">
+      <h2 class="inspiracion__title">Inspírate con nuestros diseños</h2>
+      <div class="inspiracion__carousel">
+        <img src="./assets/img/nails1.jpeg" class="inspiracion__img" alt="Nails 1">
+        <img src="./assets/img/nails2.jpeg" class="inspiracion__img" alt="Nails 2">
+        <img src="./assets/img/nails3.jpeg" class="inspiracion__img" alt="Nails 3">
+        <img src="./assets/img/nails4.jpg" class="inspiracion__img" alt="Nails 4">
+        <img src="./assets/img/nails5.jpg" class="inspiracion__img" alt="Nails 5">
+        <img src="./assets/img/nails6.jpg" class="inspiracion__img" alt="Nails 6">
+        <img src="./assets/img/nails7.jpg" class="inspiracion__img" alt="Nails 7">
+        <img src="./assets/img/nails8.jpg" class="inspiracion__img" alt="Nails 8">
+        <img src="./assets/img/nails9.jpg" class="inspiracion__img" alt="Nails 9">
+        <img src="./assets/img/nails10.jpg" class="inspiracion__img" alt="Nails 10">
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <h2 class="testimonios__title">Nuestras clientas hablan por nosotros</h2>
+      <div class="testimonios__reviews">
+        <div class="testimonios__review">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">El mejor sitio para hacerte las uñas en Bilbao!!! duran un montón sin estropearse!! A parte de la calidad, la atención es siempre excelente por parte de todas las chicas❤️</div>
+          <div class="review-client">Clau G</div>
+          <div class="review-local">Bilbao</div>
+        </div>
+        <div class="testimonios__review">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">Soy de Madrid y pocas veces me han hecho tan bien las uñas. Llegué con unas uñas desastrosas y me fui con unas uñas hechas espectaculares. Volveré siempre! Un placer chicas❤️</div>
+          <div class="review-client">Alejandra S</div>
+          <div class="review-local">Cádiz</div>
+        </div>
+        <div class="testimonios__review">
+          <div class="review-stars">★★★★★</div>
+          <div class="review-text">Me encanta como me dejan las uñas!! Las tengo frágiles y siempre me da miedo hacerme algo pero llevo todo el verano y están estupendamente! Muy recomendable</div>
+          <div class="review-client">Cris B</div>
+          <div class="review-local">Málaga</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <h2 class="blog__title">Hechale un vistazo a las ultimas tendencias</h2>
+      <div class="blog__links">
+        <a class="blog__link" href="https://www.vogue.es/articulos/manicura-disenos-tendencias-unas-2025" target="_blank">
+          <div>
+            <span class="blog__text">Vogue: Manicura diseños tendencias uñas 2025</span>
+            <div class="blog__desc">Descubre los estilos y colores que serán tendencia en manicura este año.</div>
+          </div>
+        </a>
+        <a class="blog__link" href="https://www.hola.com/belleza/20250128810121/unas-2025-tendencia/" target="_blank">
+          <div>
+            <span class="blog__text">Hola: Uñas 2025 tendencia</span>
+            <div class="blog__desc">Las uñas más populares y recomendadas por expertas del sector.</div>
+          </div>
+        </a>
+        <a class="blog__link" href="https://www.cosmopolitan.com/es/belleza/unas-manicura/g65828398/manicura-verde-tendencia-otono-2025/" target="_blank">
+          <div>
+            <span class="blog__text">Cosmopolitan: Manicura verde tendencia otoño 2025</span>
+            <div class="blog__desc">El verde se impone como color favorito para la próxima temporada.</div>
+          </div>
+        </a>
+        <a class="blog__link" href="https://www.vogue.es/articulos/unas-cortas-seda-fotos-colores-manicuras-naturales-otono-2025" target="_blank">
+          <div>
+            <span class="blog__text">Vogue: Uñas cortas seda colores naturales otoño 2025</span>
+            <div class="blog__desc">Naturalidad y elegancia, la clave para manicuras en otoño.</div>
+          </div>
+        </a>
+        <a class="blog__link" href="https://www.elmundo.es/yodona/belleza/2025/08/30/68af1bb4e85ece284d8b45b1.html" target="_blank">
+          <div>
+            <span class="blog__text">El Mundo: Tendencias uñas 2025</span>
+            <div class="blog__desc">Los mejores consejos y novedades en el mundo de la manicura.</div>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div>
@@ -84,8 +177,24 @@
       </a>
     </div>
     <div class="footer__info">
-      <!-- Bilbao, Cádiz, Málaga igual que antes -->
-      <!-- ... -->
+      <div class="footer__block">
+        <div class="footer__title">Bilbao</div>
+        <div class="footer__contact">C/ Máximo Aguirre 11 bis</div>
+        <div class="footer__contact">Tel: 660 252 523</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Cádiz</div>
+        <div class="footer__contact">Avenida Cayetano del Toro 33</div>
+        <div class="footer__contact">Tel: 692 728 828</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Málaga</div>
+        <div class="footer__contact">Calle Antonio Luis Carrión N9 local 2</div>
+        <div class="footer__contact">Tel: 674 039 794</div>
+        <div class="footer__contact">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
     </div>
   </footer>
 </body>

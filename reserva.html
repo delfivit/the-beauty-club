@@ -9,28 +9,101 @@
 </head>
 <body>
   <header class="header">
-    <!-- ... igual que index ... -->
+    <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
+    <nav class="header__menu">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <a href="reserva.html"><button class="header__btn">Reserva</button></a>
   </header>
   <main>
-    <section class="ubicaciones ubicaciones--no-margin">
+    <section class="ubicaciones">
       <h2 class="ubicaciones__title">Reserva tu cita</h2>
       <div class="ubicaciones__locals">
-        <!-- Bilbao, Cádiz, Málaga igual que en index ... -->
-      </div>
-      <div style="text-align:center; margin-top:40px;">
-        <span style="font-size:28px; color:var(--color-title-accent); font-family:var(--font-quentin); display:block; margin-bottom:20px;">
-          ¿No encuentras tu tratamiento? Llámanos.
-        </span>
-        <div class="llamar-botones">
-          <a href="tel:660252523" class="llamar-btn">Bilbao: 660 252 523</a>
-          <a href="tel:692728828" class="llamar-btn">Cádiz: 692 728 828</a>
-          <a href="tel:674039794" class="llamar-btn">Málaga: 674 039 794</a>
+        <div class="ubicaciones__local">
+          <div class="local-title">Bilbao</div>
+          <button class="local-btn" onclick="showWidget('bilbao-widget', 'https://booksy.com/widget/code.js?id=63527&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="bilbao-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <div class="local-title">Cádiz</div>
+          <button class="local-btn" onclick="showWidget('cadiz-widget', 'https://booksy.com/widget/code.js?id=94053&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="cadiz-widget"></div>
+        </div>
+        <div class="ubicaciones__local">
+          <div class="local-title">Málaga</div>
+          <button class="local-btn" onclick="showWidget('malaga-widget', 'https://booksy.com/widget/code.js?id=100020&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="malaga-widget"></div>
         </div>
       </div>
+      <section class="ayuda-contacto">
+        <div class="ayuda-title">¿Necesitas ayuda?</div>
+        <div class="ayuda-subtitle">Llámanos o mándanos un WhatsApp</div>
+        <div class="ayuda-cities">
+          <div class="ayuda-city">
+            <div class="ayuda-city-name">Bilbao</div>
+            <div class="ayuda-icons">
+              <a href="tel:660252523" class="ayuda-icon-btn" title="Llamar">
+                <img src="./assets/img/icon-phone.svg" alt="Teléfono" class="ayuda-icon">
+              </a>
+              <a href="https://wa.me/34660252523" class="ayuda-icon-btn" title="WhatsApp" target="_blank">
+                <img src="./assets/img/icon-whatsapp.svg" alt="WhatsApp" class="ayuda-icon">
+              </a>
+            </div>
+          </div>
+          <div class="ayuda-city">
+            <div class="ayuda-city-name">Cádiz</div>
+            <div class="ayuda-icons">
+              <a href="tel:692728828" class="ayuda-icon-btn" title="Llamar">
+                <img src="./assets/img/icon-phone.svg" alt="Teléfono" class="ayuda-icon">
+              </a>
+              <a href="https://wa.me/34692728828" class="ayuda-icon-btn" title="WhatsApp" target="_blank">
+                <img src="./assets/img/icon-whatsapp.svg" alt="WhatsApp" class="ayuda-icon">
+              </a>
+            </div>
+          </div>
+          <div class="ayuda-city">
+            <div class="ayuda-city-name">Málaga</div>
+            <div class="ayuda-icons">
+              <a href="tel:674039794" class="ayuda-icon-btn" title="Llamar">
+                <img src="./assets/img/icon-phone.svg" alt="Teléfono" class="ayuda-icon">
+              </a>
+              <a href="https://wa.me/34674039794" class="ayuda-icon-btn" title="WhatsApp" target="_blank">
+                <img src="./assets/img/icon-whatsapp.svg" alt="WhatsApp" class="ayuda-icon">
+              </a>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
   <footer class="footer">
-    <!-- igual que index ... -->
+    <div>
+      <img src="./assets/img/logo-footer.png" alt="The Beauty Club" class="footer__logo">
+      <a class="footer__ig" href="https://www.instagram.com/thebeautyclub.tbc/" target="_blank">
+        <span class="footer__ig-text">@thebeautyclub.tbc</span>
+      </a>
+    </div>
+    <div class="footer__info">
+      <div class="footer__block">
+        <div class="footer__title">Bilbao</div>
+        <div class="footer__contact">C/ Máximo Aguirre 11 bis</div>
+        <div class="footer__contact">Tel: 660 252 523</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Cádiz</div>
+        <div class="footer__contact">Avenida Cayetano del Toro 33</div>
+        <div class="footer__contact">Tel: 692 728 828</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Málaga</div>
+        <div class="footer__contact">Calle Antonio Luis Carrión N9 local 2</div>
+        <div class="footer__contact">Tel: 674 039 794</div>
+        <div class="footer__contact">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

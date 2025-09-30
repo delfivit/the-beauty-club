@@ -31,16 +31,20 @@ function showWidget(divId, widgetUrl) {
   }
 }
 
-// Hero fade-in effect and disappear on scroll
+// Hero fade-in effect on scroll AND fade out when scrolling down
 window.addEventListener('scroll', () => {
   const heroTitle = document.querySelector('.hero__title');
   if (!heroTitle) return;
+  // Fade in when reaches viewport, fade out as you scroll
   const rect = heroTitle.getBoundingClientRect();
-  if (rect.top < 60) {
-    heroTitle.classList.add('hide-on-scroll');
-  } else {
-    heroTitle.classList.remove('hide-on-scroll');
+  const scrollY = window.scrollY;
+  const fadeEnd = 200;
+  let opacity = 1;
+  if (scrollY > 0) {
+    opacity = Math.max(0, 1 - scrollY / fadeEnd);
   }
+  heroTitle.style.opacity = opacity;
+  // Keep fade-in class if you want an initial animation
   if (rect.top < window.innerHeight - 100) {
     heroTitle.classList.add('visible');
   }

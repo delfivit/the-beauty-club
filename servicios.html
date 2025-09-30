@@ -9,28 +9,236 @@
 </head>
 <body>
   <header class="header">
-    <!-- ... igual que index ... -->
+    <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
+    <nav class="header__menu">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <a href="reserva.html"><button class="header__btn">Reserva</button></a>
   </header>
   <main>
     <section class="ubicaciones">
       <h2 class="ubicaciones__title">Nuestros servicios</h2>
       <div class="ubicaciones__locals">
-        <!-- Bilbao, Cádiz, Málaga igual que antes ... -->
-      </div>
-      <div style="text-align:center; margin-top:40px;">
-        <span style="font-size:28px; color:var(--color-title-accent); font-family:var(--font-quentin); display:block; margin-bottom:20px;">
-          ¿No encuentras tu tratamiento? Llámanos.
-        </span>
-        <div class="llamar-botones">
-          <a href="tel:660252523" class="llamar-btn">Bilbao: 660 252 523</a>
-          <a href="tel:692728828" class="llamar-btn">Cádiz: 692 728 828</a>
-          <a href="tel:674039794" class="llamar-btn">Málaga: 674 039 794</a>
+        <!-- Bilbao -->
+        <div class="ubicaciones__local">
+          <div class="local-title">Bilbao</div>
+          <button class="local-btn" onclick="showWidget('bilbao-widget', 'https://booksy.com/widget/code.js?id=63527&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="bilbao-widget"></div>
+          <div class="servicios-rubro">
+            <strong>Manicura</strong>
+            <ul>
+              <li>Manicura rusa - 32€</li>
+              <li>Manicura semipermanente - 19€</li>
+              <li>Manicura con nivelación - 28€</li>
+              <li>Manicura rusa + nivelación - 42€</li>
+              <li>Manicura + parafina - 35€</li>
+              <li>Decoracion - 1€</li>
+              <li>Retoque acrilico - 43€</li>
+              <li>Uñas acrilicas con forma - 50€</li>
+              <li>Uñas soft gel - 36€</li>
+              <li>Retiro semipermanente - 7€</li>
+              <li>Retiro acrilico - 18€</li>
+              <li>Retirar soft gel - 32€</li>
+              <li>Uñas nuevas acrilicas - 48€</li>
+              <li>Arreglo de uña - 3€</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pedicura</strong>
+            <ul>
+              <li>Cortas uñas + semi - 19€</li>
+              <li>Pedicura Completa - 39€</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pestañas</strong>
+            <ul>
+              <li>Lifting pestañas - 36€</li>
+              <li>Service de extension de pestaña - 40€</li>
+              <li>Extension de pestañas - 60,50€</li>
+              <li>Lifting de pestaña + tinte de pestaña - 41€</li>
+              <li>Tinte de pestañas - 10€</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Cejas y Depilación Facial</strong>
+            <ul>
+              <li>Brow lamination - 20€</li>
+              <li>Depilacion de cejas - 10€</li>
+              <li>Depilation de cejas + labio - 15€</li>
+              <li>Depilaicon de cejas + tinte - 15€</li>
+              <li>Tinte de ceja - 10€</li>
+              <li>Depilation de menton - 10€</li>
+              <li>Depilaciónn de mentón + labio superior - 15€</li>
+              <li>Depilation de labio superior - 6€</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Facial</strong>
+            <ul>
+              <li>Facial completo - 20€</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Cádiz -->
+        <div class="ubicaciones__local">
+          <div class="local-title">Cádiz</div>
+          <button class="local-btn" onclick="showWidget('cadiz-widget', 'https://booksy.com/widget/code.js?id=94053&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="cadiz-widget"></div>
+          <div class="servicios-rubro">
+            <strong>Manicura y Uñas</strong>
+            <ul>
+              <li>Manicura rusa sin esmaltado - 17,00 €</li>
+              <li>Manicura semi con Refuerzo/Nivelacion - 26,00 €</li>
+              <li>Manicura esmaltado normal - 14,00 €</li>
+              <li>Manicura Rusa + Esmaltado a elección - 40,00 €</li>
+              <li>Uñas Soft-Gel - 38,00 €</li>
+              <li>Manicura Semipermanente (sin decoración) - 19,00 €</li>
+              <li>Uñas de Acry-Gel - 30,00 €</li>
+              <li>Suplemento de Manicura Francesa - 1,00 €</li>
+              <li>Suplemento Decoración Avanzada - 2,00 €</li>
+              <li>Relleno Uñas de Soft-Gel - 28,00 €</li>
+              <li>Suplemento Decoración Básica - 1,00 €</li>
+              <li>1 Uña Semipermanente - 1,50 €</li>
+              <li>1 Uña de Acry-Gel - 3,00 €</li>
+              <li>Retirar Semipermanente - 7,00 €</li>
+              <li>Retirar Acrílico/Acry-Gel - 10,00 €</li>
+              <li>Reconstrucción de uña - 3,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pedicura</strong>
+            <ul>
+              <li>Pedicura Semipermanente - 20,00 €</li>
+              <li>Retirar Semipermanente en pies - 7,00 €</li>
+              <li>Pedicura SPA + Semipermanente - 30,00 €</li>
+              <li>Pedicura con esmaltado normal - 18,00 €</li>
+              <li>Pedicura SPA + esmalte normal - 24,00 €</li>
+              <li>Limado + recorte de cutículas pies - 15,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pestañas</strong>
+            <ul>
+              <li>Lifting de Pestañas + Tinte - 30,00 €</li>
+              <li>Lifting de Pestañas - 25,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Cejas y Depilación Facial</strong>
+            <ul>
+              <li>Depilación labio superior - 5,00 €</li>
+              <li>Depilación de cejas con cera - 6,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Facial</strong>
+            <ul>
+              <li>LIimpieza facial con hidratación - 25,99 €</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Málaga -->
+        <div class="ubicaciones__local">
+          <div class="local-title">Málaga</div>
+          <button class="local-btn" onclick="showWidget('malaga-widget', 'https://booksy.com/widget/code.js?id=100020&country=es&lang=es')">Reserva en Booksy</button>
+          <div id="malaga-widget"></div>
+          <div class="servicios-rubro">
+            <strong>Manicura y Uñas</strong>
+            <ul>
+              <li>Manicura esmaltado semipermanente - 20,00 €</li>
+              <li>Retirada semipermanente manos - 5,00 €</li>
+              <li>Manicura semipermanente con refuerzo - 26,00 €</li>
+              <li>Uñas de Soft gel talla s - 32,00 €</li>
+              <li>Soft gel talla M - 36,00 €</li>
+              <li>Soft gel talla L - 42,00 €</li>
+              <li>Uñas polygel talla M - 38,00 €</li>
+              <li>Esmaltado semipermanente en pies - 20,00€</li>
+              <li>Limado y corte de uñas - 8,00 €</li>
+              <li>Decoración de uña - 2,00 €</li>
+              <li>Cambios de estructura de uña - 3,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pedicura</strong>
+            <ul>
+              <li>Esmaltado semipermanente - 20,00€</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Pestañas</strong>
+            <ul>
+              <li>Lifthing de pestañas - 35,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Cejas y Depilación Facial</strong>
+            <ul>
+              <li>Depilación con cera de axilas - 15,00 €</li>
+              <li>Depilación de cejas con cera - 15,00 €</li>
+              <li>Depilación de labio superior - 15,00 €</li>
+              <li>Depilacion de barbilla con cera - 15,00 €</li>
+              <li>Laminado de cejas - 30,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Facial</strong>
+            <ul>
+              <li>Dermapen con acido hialuronico - 50,00 €</li>
+              <li>Dermaplaning Cosmiatrico - 40,00 €</li>
+              <li>Dermapen con vitamina C - 50,00 €</li>
+              <li>Hidra Lips Glow con Acido Hialuronico - 30,00 €</li>
+              <li>Yoga Facial - 30,00 €</li>
+              <li>Facial Para Pieles Sensibles o Rosacea - 35,00 €</li>
+              <li>Limpieza Facial Profunda - 45,00 €</li>
+              <li>Exosomas Anti Age - 55,00 €</li>
+              <li>Exfoliacion de Espalda - 45,00 €</li>
+            </ul>
+          </div>
+          <div class="servicios-rubro">
+            <strong>Masajes y Spa</strong>
+            <ul>
+              <li>Masaje con Piedras Calientes - 35,00 €</li>
+              <li>Maderoterapia - 40,00 €</li>
+              <li>Masaje Para La Caída del Cabello - 35,00 €</li>
+              <li>Masaje Relajante - 40,00 €</li>
+              <li>Masaje Anti Celulitis - 40,00 €</li>
+              <li>Day Spa - 60,00 €</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <!-- igual que index ... -->
+    <div>
+      <img src="./assets/img/logo-footer.png" alt="The Beauty Club" class="footer__logo">
+      <a class="footer__ig" href="https://www.instagram.com/thebeautyclub.tbc/" target="_blank">
+        <span class="footer__ig-text">@thebeautyclub.tbc</span>
+      </a>
+    </div>
+    <div class="footer__info">
+      <div class="footer__block">
+        <div class="footer__title">Bilbao</div>
+        <div class="footer__contact">C/ Máximo Aguirre 11 bis</div>
+        <div class="footer__contact">Tel: 660 252 523</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb: 9:30–14:00<br>Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Cádiz</div>
+        <div class="footer__contact">Avenida Cayetano del Toro 33</div>
+        <div class="footer__contact">Tel: 692 728 828</div>
+        <div class="footer__contact">Lun-Vie: 9:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+      <div class="footer__block">
+        <div class="footer__title">Málaga</div>
+        <div class="footer__contact">Calle Antonio Luis Carrión N9 local 2</div>
+        <div class="footer__contact">Tel: 674 039 794</div>
+        <div class="footer__contact">Lun, Mar, Jue, Vie: 9:30–20:30<br>Mié: 11:30–20:30<br>Sáb-Dom: Cerrado</div>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
