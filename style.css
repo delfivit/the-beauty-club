@@ -736,7 +736,7 @@ section {
     margin-top: 56px;
   }
   .hero__title {
-    font-size: 14vw !important;
+    font-size: 24vw !important;
   }
   .footer { flex-direction: column; align-items: flex-start; }
   .ubicaciones__local { max-width: 95vw; }
