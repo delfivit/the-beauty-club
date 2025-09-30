@@ -649,6 +649,9 @@ section {
   .header__menu {
     display: none;
   }
+  .header__btn-link {
+    display: none !important;
+  }
   .header {
     flex-direction: row;
     align-items: center;
@@ -669,6 +672,17 @@ section {
   .header__menu-mobile {
     display: none;
     top: 70px;
+    right: 0;
+    position: fixed;
+    flex-direction: column;
+    background: #fff;
+    width: 75vw;
+    max-width: 320px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.09);
+    padding: 32px 22px 22px 22px;
+    z-index: 99;
+    border-radius: 0 0 0 18px;
+    animation: menuMobileFade 0.3s;
   }
   body.menu-open .header__menu-mobile {
     display: flex;
