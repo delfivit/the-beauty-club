@@ -55,3 +55,25 @@ window.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => heroTitle.classList.add('visible'), 400);
   }
 });
+// Menú hamburguesa móvil
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.header__menu-toggle');
+  const body = document.body;
+  if (menuBtn) {
+    menuBtn.addEventListener('click', function() {
+      body.classList.toggle('menu-open');
+    });
+  }
+  // Cierra menú si se hace click fuera
+  document.addEventListener('click', function(e) {
+    const mobileMenu = document.querySelector('.header__menu-mobile');
+    if (
+      body.classList.contains('menu-open') &&
+      mobileMenu &&
+      !mobileMenu.contains(e.target) &&
+      !menuBtn.contains(e.target)
+    ) {
+      body.classList.remove('menu-open');
+    }
+  });
+});

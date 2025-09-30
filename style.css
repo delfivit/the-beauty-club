@@ -60,11 +60,13 @@ a {
   height: 100px;
   width: auto;
 }
+/* Menú desktop */
 .header__menu {
   display: flex;
   gap: 34px;
   flex: 1;
   justify-content: center;
+  align-items: center;
 }
 .header__menu a {
   font-family: var(--font-outfit);
@@ -90,7 +92,74 @@ a {
 .header__btn:hover {
   background: var(--color-title-accent);
 }
-
+/* Menú hamburguesa (solo mobile) */
+.header__menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+.header__menu-icon {
+  display: inline-block;
+  width: 28px;
+  height: 4px;
+  background: var(--color-title-dark);
+  position: relative;
+  border-radius: 3px;
+}
+.header__menu-icon::before,
+.header__menu-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 28px;
+  height: 4px;
+  background: var(--color-title-dark);
+  border-radius: 3px;
+  transition: 0.25s;
+}
+.header__menu-icon::before {
+  top: -9px;
+}
+.header__menu-icon::after {
+  top: 9px;
+}
+/* Menú mobile desplegable */
+.header__menu-mobile {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 110px;
+  right: 0;
+  background: #fff;
+  width: 75vw;
+  max-width: 320px;
+  box-shadow: -2px 0 12px rgba(0,0,0,0.09);
+  padding: 32px 22px 22px 22px;
+  z-index: 99;
+  border-radius: 0 0 0 18px;
+  animation: menuMobileFade 0.3s;
+}
+@keyframes menuMobileFade {
+  from { opacity: 0; right: -100vw; }
+  to { opacity: 1; right: 0; }
+}
+.header__menu-mobile a {
+  margin-bottom: 18px;
+  font-size: 1.15rem;
+  color: var(--color-title-dark);
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  text-align: right;
+  display: block;
+}
+.header__menu-mobile .header__btn {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 /* Footer */
 .footer {
   background: var(--color-bg-main);
@@ -608,4 +677,31 @@ section {
   .footer { flex-direction: column; align-items: flex-start; }
   .hero__title { font-size: 3rem; }
   .ubicaciones__local { max-width: 95vw; }
+}
+/* Responsive: oculta menú desktop y muestra hamburguesa en móvil */
+@media (max-width: 900px) {
+  .header {
+    padding: 0 14px;
+    height: 70px;
+  }
+  .header__logo {
+    height: 60px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__menu-toggle {
+    display: block;
+    margin-left: auto;
+    z-index: 100;
+  }
+  .header__menu-mobile {
+    display: none;
+  }
+  body.menu-open .header__menu-mobile {
+    display: flex;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
 }
