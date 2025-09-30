@@ -719,6 +719,7 @@ section {
     display: none !important;
   }
 }
+/* ----------- FOOTER MOBILE FIX ----------- */
 @media (max-width: 600px) {
   .header {
     padding: 0 4px 0 4px;
@@ -738,6 +739,24 @@ section {
   .hero__title {
     font-size: 24vw !important;
   }
-  .footer { flex-direction: column; align-items: flex-start; }
-  .ubicaciones__local { max-width: 95vw; }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 32px 10px 28px 10px;
+  }
+  .footer__info {
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+  }
+  .footer__block {
+    min-width: unset;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .footer__logo {
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
 }
