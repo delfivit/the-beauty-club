@@ -594,7 +594,8 @@ section {
   margin-bottom: 7px;
   font-weight: 400;
 }
-/* Responsive */
+
+/* MOBILE AJUSTES PEDIDOS */
 @media (max-width: 900px) {
   .header {
     flex-direction: row;
