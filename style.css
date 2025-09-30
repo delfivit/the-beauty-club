@@ -60,6 +60,7 @@ a {
 .header__logo {
   height: 100px;
   width: auto;
+  margin-right: 0;
 }
 .header__menu {
   display: flex;
@@ -130,31 +131,46 @@ a {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0;
+  padding: 12px 28px;
+  border-radius: 24px;
+  background: var(--color-btn);
+  color: var(--color-btn-text);
+  font-family: var(--font-outfit);
+  font-weight: 600;
+  border: none;
+  font-size: 0.98rem;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+}
+.header__menu-mobile .header__btn:hover {
+  background: var(--color-title-accent);
 }
 
-/* --- SOLO MEDIA QUERIES RELEVANTES AJUSTADOS --- */
+/* --- MOBILE HEADER --- */
 @media (max-width: 900px) {
   .header {
     padding: 0 14px;
     height: 70px;
-    flex-direction: row; /* <-- mantiene horizontal en mobile */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .header__logo {
     height: 60px;
+    margin-right: auto;
   }
   .header__menu {
     display: none;
   }
   .header__menu-toggle {
     display: block;
-    margin-left: auto;
     z-index: 100;
-    /* centrado vertical */
     align-self: center;
+    margin-left: 0;
   }
   .header__menu-mobile {
     display: none;
-    top: 70px; /* ajusta según altura real del header */
+    top: 70px;
   }
   body.menu-open .header__menu-mobile {
     display: flex;
@@ -163,17 +179,18 @@ a {
     overflow: hidden;
   }
 }
-
 @media (max-width: 600px) {
   .header {
     padding: 0 12px;
     height: 56px;
-    flex-direction: row; /* <-- mantiene horizontal en mobile */
+    flex-direction: row;
   }
   .header__logo {
     height: 42px;
+    margin-right: auto;
   }
 }
+
 /* Footer */
 .footer {
   background: var(--color-bg-main);
@@ -697,25 +714,42 @@ section {
   .header {
     padding: 0 14px;
     height: 70px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   .header__logo {
     height: 60px;
+    margin-right: auto;
   }
   .header__menu {
     display: none;
   }
   .header__menu-toggle {
     display: block;
-    margin-left: auto;
     z-index: 100;
+    align-self: center;
+    margin-left: 0;
   }
   .header__menu-mobile {
     display: none;
+    top: 70px;
   }
   body.menu-open .header__menu-mobile {
     display: flex;
   }
   body.menu-open {
     overflow: hidden;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    padding: 0 12px;
+    height: 56px;
+    flex-direction: row;
+  }
+  .header__logo {
+    height: 42px;
+    margin-right: auto;
   }
 }
