@@ -149,7 +149,7 @@ a {
 /* --- MOBILE HEADER --- */
 @media (max-width: 900px) {
   .header {
-    padding: 0 14px;
+    padding: 0 14px 0 10px;
     height: 70px;
     flex-direction: row;
     align-items: center;
@@ -166,7 +166,7 @@ a {
     display: block;
     z-index: 100;
     align-self: center;
-    margin-left: 0;
+    margin-right: 8px;
   }
   .header__menu-mobile {
     display: none;
@@ -181,7 +181,7 @@ a {
 }
 @media (max-width: 600px) {
   .header {
-    padding: 0 12px;
+    padding: 0 8px 0 4px;
     height: 56px;
     flex-direction: row;
   }
@@ -189,85 +189,49 @@ a {
     height: 42px;
     margin-right: auto;
   }
-}
-
-/* Footer */
-.footer {
-  background: var(--color-bg-main);
-  padding: 36px 40px 32px 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 32px;
-  align-items: flex-start;
-  border-top: 2px solid #fff;
-}
-.footer__logo {
-  height: 150px;
-  width: auto;
-  display: block;
-  margin-bottom: 3px;
-}
-.footer__ig {
-  display: block;
-  text-align: center;
-  margin-top: 12px;
-}
-.footer__ig-text {
-  color: #8a1c1c;
-  font-family: var(--font-outfit);
-  font-size: 1.08rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-}
-.footer__ig:hover .footer__ig-text {
-  color: #d48b71;
-  text-decoration: underline;
-}
-.footer__info {
-  display: flex;
-  gap: 44px;
-  justify-content: flex-end;
-  flex: 1;
-}
-.footer__block {
-  min-width: 240px;
-  text-align: left;
-}
-.footer__title {
-  font-family: var(--font-butler);
-  font-size: 1.4rem;
-  color: var(--color-title-dark);
-  margin-bottom: 10px;
-}
-.footer__contact {
-  font-size: 16px;
-  margin-bottom: 7px;
-  font-family: var(--font-outfit);
-  display: block;
-}
-.footer__contact.tel {
-  color: var(--color-title-accent);
-  text-decoration: underline;
-  cursor: pointer;
+  .header__menu-toggle {
+    margin-right: 4px;
+  }
 }
 
 /* Espaciado entre header y primera sección */
 main {
   margin-top: 110px;
 }
+@media (max-width: 900px) {
+  main {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    margin-top: 56px;
+  }
+}
 
 /* Hero Section */
 .hero {
   background: var(--color-bg-hero);
   color: var(--color-title);
-  padding: 0 24px 80px 24px;
+  padding: 0 24px 40px 24px;
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 900px) {
+  .hero {
+    min-height: 92vh;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .hero {
+    min-height: 90vh;
+    padding-bottom: 10px;
+  }
 }
 .hero__title {
   font-size: 10vw;
@@ -694,7 +658,8 @@ section {
   margin-bottom: 7px;
   font-weight: 400;
 }
-/* Responsive */
+
+/* Responsive: otras secciones */
 @media (max-width: 900px) {
   .header__menu { gap: 18px; font-size: 1rem;}
   .ubicaciones__locals { flex-direction: column; align-items: center; }
@@ -704,52 +669,7 @@ section {
   .header { padding: 0 10px;}
 }
 @media (max-width: 600px) {
-  .header { flex-direction: column; height: auto; padding: 10px; }
   .footer { flex-direction: column; align-items: flex-start; }
   .hero__title { font-size: 3rem; }
   .ubicaciones__local { max-width: 95vw; }
-}
-/* Responsive: oculta menú desktop y muestra hamburguesa en móvil */
-@media (max-width: 900px) {
-  .header {
-    padding: 0 14px;
-    height: 70px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .header__logo {
-    height: 60px;
-    margin-right: auto;
-  }
-  .header__menu {
-    display: none;
-  }
-  .header__menu-toggle {
-    display: block;
-    z-index: 100;
-    align-self: center;
-    margin-left: 0;
-  }
-  .header__menu-mobile {
-    display: none;
-    top: 70px;
-  }
-  body.menu-open .header__menu-mobile {
-    display: flex;
-  }
-  body.menu-open {
-    overflow: hidden;
-  }
-}
-@media (max-width: 600px) {
-  .header {
-    padding: 0 12px;
-    height: 56px;
-    flex-direction: row;
-  }
-  .header__logo {
-    height: 42px;
-    margin-right: auto;
-  }
 }
