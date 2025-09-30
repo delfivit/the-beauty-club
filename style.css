@@ -641,7 +641,7 @@ section {
   background: #fff7f5;
   border-radius: 14px;
   box-shadow: 0 2px 8px rgba(138, 28, 28, 0.07);
-  border: 2px solid #faaca2;
+  border: none;
   padding: 18px 18px 12px 18px;
   margin-bottom: 18px;
   margin-top: 8px;
@@ -670,6 +670,70 @@ section {
 .servicios-rubro li {
   margin-bottom: 7px;
   font-weight: 400;
+}
+.servicios-rubro {
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(138, 28, 28, 0.07);
+  border: noose;
+  margin-bottom: 18px;
+  margin-top: 8px;
+  font-family: var(--font-outfit);
+  color: #7f0e0e;
+  font-size: 1.09rem;
+  background: #fff7f5;
+  transition: box-shadow 0.15s;
+  overflow: hidden;
+  padding: 0;
+}
+
+.servicios-rubro summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-butler);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: #8a1c1c;
+  padding: 18px 18px 14px 18px;
+  outline: none;
+  user-select: none;
+  border-bottom: none;
+  transition: background 0.15s;
+}
+
+.servicios-rubro[open] summary {
+  background: #faaca222;
+}
+
+.servicios-rubro ul {
+  padding: 16px 24px 18px 32px;
+  margin: 0;
+}
+
+.servicios-rubro li {
+  margin-bottom: 7px;
+  font-weight: 400;
+  font-family: var(--font-outfit);
+}
+
+.servicios-rubro strong {
+  font-family: var(--font-outfit);
+  font-size: 1.25rem;
+  color: #8a1c1c;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 0;
+}
+.ubicaciones__local {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.servicios-rubro {
+  width: 100%; /* todas las cajas ocupan el mismo ancho */
+  min-width: 220px; /* opcional: ajustá si querés un mínimo */
+  box-sizing: border-box;
 }
 /* Responsive */
 /* MOBILE CORRECCIONES */
