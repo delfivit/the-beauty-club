@@ -8,138 +8,516 @@
   <script defer src="script.js"></script>
 </head>
 <body>
-   <header class="header">
-  <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
-  <nav class="header__menu">
-    <a href="servicios.html">Servicios</a>
-    <a href="ubicaciones.html">Ubicaciones</a>
-    <a href="sobre-nosotros.html">Sobre Nosotros</a>
-  </nav>
-  <a href="reserva.html" class="header__btn-link"><button class="header__btn">Reserva</button></a>
-  <button class="header__menu-toggle" aria-label="Abrir menú">
-    <span class="header__menu-icon"></span>
-  </button>
-  <nav class="header__menu-mobile">
-    <a href="servicios.html">Servicios</a>
-    <a href="ubicaciones.html">Ubicaciones</a>
-    <a href="sobre-nosotros.html">Sobre Nosotros</a>
-    <a href="reserva.html"><button class="header__btn">Reserva</button></a>
-  </nav>
-</header>
+  <header class="header">
+    <a href="index.html"><img src="./assets/img/logo-header.png" alt="The Beauty Club" class="header__logo"></a>
+    <nav class="header__menu">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+    </nav>
+    <a href="reserva.html" class="header__btn-link"><button class="header__btn">Reserva</button></a>
+    <button class="header__menu-toggle" aria-label="Abrir menú">
+      <span class="header__menu-icon"></span>
+    </button>
+    <nav class="header__menu-mobile">
+      <a href="servicios.html">Servicios</a>
+      <a href="ubicaciones.html">Ubicaciones</a>
+      <a href="sobre-nosotros.html">Sobre Nosotros</a>
+      <a href="reserva.html"><button class="header__btn">Reserva</button></a>
+    </nav>
+  </header>
+
   <main>
     <section class="ubicaciones">
       <h2 class="ubicaciones__title">Nuestros servicios</h2>
       <div class="ubicaciones__locals">
+
         <!-- Bilbao -->
         <div class="ubicaciones__local">
           <div class="local-title">Bilbao</div>
+
           <details class="servicios-rubro">
             <summary><strong>Manicura</strong></summary>
             <ul>
-              <li>Manicura rusa - 32€</li>
-              <li>Manicura semipermanente - 19€</li>
-              <li>Manicura con nivelación - 28€</li>
-              <li>Manicura rusa + nivelación - 42€</li>
-              <li>Manicura + parafina - 35€</li>
-              <li>Decoracion - 1€</li>
-              <li>Retoque acrilico - 43€</li>
-              <li>Uñas acrilicas con forma - 50€</li>
-              <li>Uñas soft gel - 36€</li>
-              <li>Retiro semipermanente - 7€</li>
-              <li>Retiro acrilico - 18€</li>
-              <li>Retirar soft gel - 32€</li>
-              <li>Uñas nuevas acrilicas - 48€</li>
-              <li>Arreglo de uña - 3€</li>
+              <li>
+                Manicura Semipermanente – €20
+                <br><small>Limado y corte de uñas, retirada de cutículas y aplicación de esmalte semipermanente para mayor duración y brillo.</small>
+              </li>
+              <li>
+                Manicura Esmaltado tradicional – €15
+                <br><small>Limado, corte y retirada de cutículas con esmaltado tradicional para un acabado clásico.</small>
+              </li>
+              <li>
+                Manicura rusa – €15
+                <br><small>Limpieza profunda de la uña con torno y fresas de diamante, eliminación minuciosa de cutículas. Servicio sin esmalte.</small>
+              </li>
+              <li>
+                Manicura Rusa + semipermanente – €35
+                <br><small>Manicura rusa completa combinada con esmaltado semipermanente para un resultado duradero y pulcro.</small>
+              </li>
+              <li>
+                Manicura Rusa + esmaltado tradicional – €25
+                <br><small>Manicura rusa profunda seguida de esmaltado tradicional para un acabado natural y cuidado.</small>
+              </li>
+              <li>
+                Manicura semipermanente con nivelación – €30
+                <br><small>Aplicación de base de refuerzo para nivelar la superficie de la uña y esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Manicura Rusa + nivelación – €40
+                <br><small>Manicura rusa con trabajo de nivelación y acabado en semipermanente para uñas uniformes y resistentes.</small>
+              </li>
+
+              <li>
+                Soft gel S con retiro – €40
+                <br><small>Retiro previo del trabajo y aplicación de tips soft gel talla S con acabado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel M con retiro – €42
+                <br><small>Retiro previo y colocación de tips soft gel talla M, acabado con semipermanente.</small>
+              </li>
+              <li>
+                Soft gel L con retiro – €46
+                <br><small>Retiro previo y aplicación de tips soft gel talla L con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel S sin retiro – €38
+                <br><small>Aplicación de tips soft gel talla S sin necesidad de retirar trabajos anteriores.</small>
+              </li>
+              <li>
+                Soft gel M sin retiro – €40
+                <br><small>Aplicación de tips soft gel talla M sin retiro previo.</small>
+              </li>
+              <li>
+                Soft gel L sin retiro – €42
+                <br><small>Aplicación de tips soft gel talla L sin retiro previo.</small>
+              </li>
+
+              <li>
+                Acrílicas S con retiro – €55
+                <br><small>Retiro previo y construcción acrílica talla S, acabado con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Acrílicas M con retiro – €65
+                <br><small>Retiro previo y construcción acrílica talla M con acabado semipermanente.</small>
+              </li>
+              <li>
+                Acrílicas L con retiro – €75
+                <br><small>Retiro previo y reconstrucción acrílica talla L, finalizado con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Acrílicas S sin retiro – €50
+                <br><small>Construcción acrílica talla S sin retiro de material anterior.</small>
+              </li>
+              <li>
+                Acrílicas M sin retiro – €60
+                <br><small>Construcción acrílica talla M sin retiro previo.</small>
+              </li>
+              <li>
+                Acrílicas L sin retiro – €70
+                <br><small>Construcción acrílica talla L sin retiro previo.</small>
+              </li>
+
+              <li>
+                Retoque acrílico – €40
+                <br><small>Relleno y reposición de material acrílico en la zona de crecimiento.</small>
+              </li>
+              <li>
+                Retoque soft gel – €35
+                <br><small>Relleno y mantenimiento en sistema soft gel para mantener forma y acabado.</small>
+              </li>
+              <li>
+                Retiro semipermanente – €10
+                <br><small>Eliminación completa del esmaltado semipermanente mediante remoción química y limado suave.</small>
+              </li>
+              <li>
+                Retiro soft gel – €15
+                <br><small>Retiro de tips en sistema soft gel mediante disolución y limado controlado para proteger la uña natural.</small>
+              </li>
+              <li>
+                Retiro acrílico – €20
+                <br><small>Eliminación mecánica controlada del sistema acrílico con limado profesional.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra manicura</strong></summary>
+            <ul>
+              <li>
+                Decoración simple – €3
+                <br><small>Diseños básicos como línea, puntos o francesa minimal.</small>
+              </li>
+              <li>
+                Decoración intermedia – €7
+                <br><small>Diseños de complejidad media: estrellas, flores, baby boomer, efecto ojo de gato.</small>
+              </li>
+              <li>
+                Decoración avanzada – €12
+                <br><small>Nail art personalizado: relieves, dibujos a mano y efectos especiales.</small>
+              </li>
+              <li>
+                Reconstrucción de una uña – €5
+                <br><small>Reparación y reconstrucción de uña dañada mediante acrílico o gel.</small>
+              </li>
+              <li>
+                Arreglo de uña semipermanente – €3
+                <br><small>Reparación puntual de manicura semipermanente en una uña.</small>
+              </li>
+              <li>
+                Cambio de estructura – €3
+                <br><small>Modificación de la forma o estructura de la uña (redonda, cuadrada, almendra, etc.).</small>
+              </li>
+              <li>
+                Extra de decoración – €5
+                <br><small>Colocación de charms, piedras o elementos decorativos.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pedicura</strong></summary>
             <ul>
-              <li>Cortas uñas + semi - 19€</li>
-              <li>Pedicura Completa - 39€</li>
+              <li>
+                Pedicura básica semipermanente – €22
+                <br><small>Limado y corte, retirada de cutículas y esmaltado semipermanente en pies.</small>
+              </li>
+              <li>
+                Pedicura básica tradicional – €17
+                <br><small>Pedicura básica con esmaltado tradicional y cuidado de uñas y cutículas.</small>
+              </li>
+              <li>
+                Pedicura completa semipermanente – €45
+                <br><small>Limpieza profunda de pies, exfoliación plantar, retirada de durezas y esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Pedicura completa tradicional – €35
+                <br><small>Limpieza y cuidado integral de pies con exfoliación y esmaltado tradicional.</small>
+              </li>
+              <li>
+                Retiro pedicura semipermanente – €8
+                <br><small>Eliminación completa del esmaltado semipermanente en los pies.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra pedicura</strong></summary>
+            <ul>
+              <li>
+                Reconstrucción de una uña – €5
+                <br><small>Reconstrucción mediante acrílico o gel para uñas de los pies dañadas.</small>
+              </li>
+            </ul>
+          </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Cejas</strong></summary>
+            <ul>
+              <li>
+                Brow lamination – €25
+                <br><small>Tratamiento de laminado para peinar, fijar y levantar el vello de las cejas.</small>
+              </li>
+              <li>
+                Tinte de ceja – €15
+                <br><small>Aplicación de tinte para igualar y potenciar el color de las cejas.</small>
+              </li>
+              <li>
+                Depilación de cejas – €10
+                <br><small>Diseño y depilación con pinza o cera para definir la forma según el rostro.</small>
+              </li>
+              <li>
+                Depilación de cejas + tinte – €20
+                <br><small>Servicio combinado de diseño y color para cejas definidas y con mayor presencia.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pestañas</strong></summary>
             <ul>
-              <li>Lifting pestañas - 36€</li>
-              <li>Service de extension de pestaña - 40€</li>
-              <li>Extension de pestañas - 60,50€</li>
-              <li>Lifting de pestaña + tinte de pestaña - 41€</li>
-              <li>Tinte de pestañas - 10€</li>
+              <li>
+                Lifting de pestañas – €38
+                <br><small>Rizado y fijación profesional de pestañas naturales para efecto curvado y abierto.</small>
+              </li>
+              <li>
+                Lifting de pestañas + tinte de pestañas – €42
+                <br><small>Combinación de rizado y coloración para potenciar volumen y definición.</small>
+              </li>
+              <li>
+                Tinte de pestañas – €12
+                <br><small>Aplicación de tinte para oscurecer y homogeneizar el color de las pestañas.</small>
+              </li>
+              <li>
+                Extensión de pestañas – €65
+                <br><small>Colocación de extensiones individuales para crear volumen y longitud naturales o intensas.</small>
+              </li>
+              <li>
+                Service de extensión de pestañas – €45
+                <br><small>Mantenimiento y reposición de extensiones retirando las sueltas y rellenando zonas con crecimiento.</small>
+              </li>
+              <li>
+                Retirar extensiones de pestañas – €15
+                <br><small>Retiro seguro de extensiones con disolución controlada del adhesivo.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Cejas y Depilación Facial</strong></summary>
+            <summary><strong>Depilación</strong></summary>
             <ul>
-              <li>Brow lamination - 20€</li>
-              <li>Depilación de cejas - 10€</li>
-              <li>Depilación de cejas + labio - 15€</li>
-              <li>Depilación de cejas + tinte - 15€</li>
-              <li>Tinte de ceja - 10€</li>
-              <li>Depilación de mentón - 10€</li>
-              <li>Depilación de mentón + labio superior - 15€</li>
-              <li>Depilación de labio superior - 6€</li>
-              <li>Facial completo - 20€</li>
+              <li>
+                Cejas + labio superior – €15
+                <br><small>Depilación combinada de cejas y labio superior con cera y/o pinza para acabado limpio.</small>
+              </li>
+              <li>
+                Mentón – €10
+                <br><small>Depilación puntual de mentón con cera o pinza para eliminar vello no deseado.</small>
+              </li>
+              <li>
+                Mentón + labio superior – €15
+                <br><small>Servicio combinado para retirar vello de mentón y labio superior con cera y pinza.</small>
+              </li>
+              <li>
+                Labio superior – €10
+                <br><small>Depilación del labio superior con técnicas suaves para minimizar irritación.</small>
+              </li>
+              <li>
+                Facial completo – €20
+                <br><small>Depilación integral de cejas, labio superior y mentón para un rostro más limpio y definido.</small>
+              </li>
             </ul>
           </details>
+
         </div>
+
         <!-- Cádiz -->
         <div class="ubicaciones__local">
           <div class="local-title">Cádiz</div>
+
           <details class="servicios-rubro">
             <summary><strong>Manicura</strong></summary>
             <ul>
-              <li>Manicura rusa sin esmaltado - 17,00 €</li>
-              <li>Manicura semi con Refuerzo/Nivelacion - 26,00 €</li>
-              <li>Manicura esmaltado normal - 14,00 €</li>
-              <li>Manicura Rusa + Esmaltado a elección - 40,00 €</li>
-              <li>Uñas Soft-Gel - 38,00 €</li>
-              <li>Manicura Semipermanente (sin decoración) - 19,00 €</li>
-              <li>Uñas de Acry-Gel - 30,00 €</li>
-              <li>Suplemento de Manicura Francesa - 1,00 €</li>
-              <li>Suplemento Decoración Avanzada - 2,00 €</li>
-              <li>Relleno Uñas de Soft-Gel - 28,00 €</li>
-              <li>Suplemento Decoración Básica - 1,00 €</li>
-              <li>1 Uña Semipermanente - 1,50 €</li>
-              <li>1 Uña de Acry-Gel - 3,00 €</li>
-              <li>Retirar Semipermanente - 7,00 €</li>
-              <li>Retirar Acrílico/Acry-Gel - 10,00 €</li>
-              <li>Reconstrucción de uña - 3,00 €</li>
+              <li>
+                Manicura Semipermanente – €20
+                <br><small>Limado y corte de uñas, retirada de cutículas y aplicación de esmalte semipermanente.</small>
+              </li>
+              <li>
+                Manicura Esmaltado tradicional – €15
+                <br><small>Cuidados básicos de uñas con esmaltado tradicional para un acabado clásico.</small>
+              </li>
+              <li>
+                Manicura rusa – €15
+                <br><small>Limpieza profunda con torno y fresas para eliminar cutículas y suciedad. Servicio sin esmalte.</small>
+              </li>
+              <li>
+                Manicura Rusa + semipermanente – €35
+                <br><small>Manicura rusa seguida de esmaltado semipermanente para mayor durabilidad.</small>
+              </li>
+              <li>
+                Manicura Rusa + esmaltado tradicional – €25
+                <br><small>Manicura rusa con acabado de esmalte tradicional.</small>
+              </li>
+              <li>
+                Manicura semipermanente con nivelación – €30
+                <br><small>Aplicación de base de refuerzo para nivelar irregularidades y esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Manicura Rusa + nivelación – €40
+                <br><small>Manicura profunda con trabajo de nivelación y esmaltado semipermanente.</small>
+              </li>
+
+              <li>
+                Soft gel S con retiro – €40
+                <br><small>Retiro de trabajo anterior y colocación de tips soft gel talla S con acabado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel M con retiro – €42
+                <br><small>Retiro previo y aplicación de tips soft gel talla M con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel L con retiro – €46
+                <br><small>Retiro previo y colocación de tips soft gel talla L con acabado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel S sin retiro – €38
+                <br><small>Aplicación de tips soft gel talla S sin retirar trabajos anteriores.</small>
+              </li>
+              <li>
+                Soft gel M sin retiro – €40
+                <br><small>Aplicación de tips soft gel talla M sin retiro previo.</small>
+              </li>
+              <li>
+                Soft gel L sin retiro – €42
+                <br><small>Aplicación de tips soft gel talla L sin retiro previo.</small>
+              </li>
+
+              <li>
+                Retoque soft gel – €35
+                <br><small>Relleno y mantenimiento para recuperar el aspecto del soft gel.</small>
+              </li>
+              <li>
+                Retiro semipermanente – €10
+                <br><small>Retiro seguro del esmaltado semipermanente con remoción química y limado suave.</small>
+              </li>
+              <li>
+                Retiro soft gel – €15
+                <br><small>Eliminación controlada de tips soft gel mediante disolución y limado.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra manicura</strong></summary>
+            <ul>
+              <li>
+                Decoración simple – €3
+                <br><small>Diseños básicos para complementar la manicura.</small>
+              </li>
+              <li>
+                Decoración intermedia – €7
+                <br><small>Decoraciones con mayor detalle, como pequeños motivos y efectos.</small>
+              </li>
+              <li>
+                Decoración avanzada – €12
+                <br><small>Nail art avanzado con técnicas y materiales especiales.</small>
+              </li>
+              <li>
+                Reconstrucción de una uña – €5 (soft gel)
+                <br><small>Reconstrucción puntual usando soft gel para restaurar la uña.</small>
+              </li>
+              <li>
+                Arreglo de uña semipermanente – €3
+                <br><small>Reparación rápida de manicura semipermanente en una uña.</small>
+              </li>
+              <li>
+                Cambio de estructura – €3
+                <br><small>Ajuste o cambio de la forma de la uña según preferencia.</small>
+              </li>
+              <li>
+                Extra de decoración – €5
+                <br><small>Aplicación de piedras o charms para un acabado especial.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pedicura</strong></summary>
             <ul>
-              <li>Pedicura Semipermanente - 20,00 €</li>
-              <li>Retirar Semipermanente en pies - 7,00 €</li>
-              <li>Pedicura SPA + Semipermanente - 30,00 €</li>
-              <li>Pedicura con esmaltado normal - 18,00 €</li>
-              <li>Pedicura SPA + esmalte normal - 24,00 €</li>
-              <li>Limado + recorte de cutículas pies - 15,00 €</li>
+              <li>
+                Pedicura básica semipermanente – €22
+                <br><small>Cuidados básicos de uñas y cutículas con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Pedicura básica tradicional – €17
+                <br><small>Pedicura básica con esmaltado tradicional y cuidado de pies.</small>
+              </li>
+              <li>
+                Pedicura completa semipermanente – €45
+                <br><small>Limpieza profunda, exfoliación y esmaltado semipermanente para pies saludables.</small>
+              </li>
+              <li>
+                Pedicura completa tradicional – €35
+                <br><small>Pedicura integral con exfoliación plantar y esmaltado tradicional.</small>
+              </li>
+              <li>
+                Retiro pedicura semipermanente – €8
+                <br><small>Eliminación completa del esmaltado semipermanente en pies.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra pedicura</strong></summary>
+            <ul>
+              <li>
+                Reconstrucción de una uña – €5 (gel)
+                <br><small>Reconstrucción mediante gel para recuperar la estructura de la uña del pie.</small>
+              </li>
+            </ul>
+          </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Cejas</strong></summary>
+            <ul>
+              <li>
+                Brow lamination – €25
+                <br><small>Laminado para peinar y fijar cejas, logrando un look definido y ordenado.</small>
+              </li>
+              <li>
+                Tinte de ceja – €15
+                <br><small>Aplicación de color para un tono homogéneo en las cejas.</small>
+              </li>
+              <li>
+                Depilación de cejas – €10
+                <br><small>Definición y modelado con cera o pinza según la anatomía del rostro.</small>
+              </li>
+              <li>
+                Depilación de cejas + tinte – €20
+                <br><small>Combinación de diseño y color para un resultado completo.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pestañas</strong></summary>
             <ul>
-              <li>Lifting de Pestañas + Tinte - 30,00 €</li>
-              <li>Lifting de Pestañas - 25,00 €</li>
+              <li>
+                Lifting de pestañas – €38
+                <br><small>Rizado profesional para abrir la mirada y potenciar las pestañas naturales.</small>
+              </li>
+              <li>
+                Lifting de pestañas + tinte de pestañas – €42
+                <br><small>Rizado más coloración para una mirada más definida sin maquillaje.</small>
+              </li>
+              <li>
+                Tinte de pestañas – €12
+                <br><small>Oscurecimiento homogéneo del vello para mayor definición.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Cejas y Depilación Facial</strong></summary>
+            <summary><strong>Depilación</strong></summary>
             <ul>
-              <li>Depilación labio superior - 5,00 €</li>
-              <li>Depilación de cejas con cera - 6,00 €</li>
+              <li>Cejas + labio superior – €15
+                <br><small>Depilación combinada con cera y/o pinza para un acabado limpio.</small>
+              </li>
+              <li>Mentón – €10
+                <br><small>Eliminación de vello en la zona del mentón con técnicas suaves.</small>
+              </li>
+              <li>Mentón + labio superior – €15
+                <br><small>Servicio combinado de depilación facial puntual.</small>
+              </li>
+              <li>Labio superior – €10
+                <br><small>Depilación precisa del labio superior para un rostro más limpio.</small>
+              </li>
+              <li>Facial completo – €20
+                <br><small>Depilación de cejas, labio superior y mentón para un acabado completo.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Facial</strong></summary>
+            <summary><strong>Faciales</strong></summary>
             <ul>
-              <li>LIimpieza facial con hidratación - 25,99 €</li>
+              <li>
+                Limpieza facial profunda – €40
+                <br><small>Limpieza, exfoliación, extracción de impurezas, tonificación e hidratación final.</small>
+              </li>
+              <li>
+                Tratamiento hidratante – €30
+                <br><small>Limpieza, exfoliación y aplicación de productos humectantes para recuperar la hidratación de la piel.</small>
+              </li>
+              <li>
+                Yoga facial – €30
+                <br><small>Ejercicios y masajes manuales para estimular la circulación y tonificar el rostro.</small>
+              </li>
             </ul>
           </details>
+
         </div>
+
         <!-- Málaga -->
         <div class="ubicaciones__local">
           <div class="local-title">Málaga</div>
@@ -147,70 +525,252 @@
           <details class="servicios-rubro">
             <summary><strong>Manicura</strong></summary>
             <ul>
-              <li>Manicura esmaltado semipermanente - 20,00 €</li>
-              <li>Retirada semipermanente manos - 5,00 €</li>
-              <li>Manicura semipermanente con refuerzo - 26,00 €</li>
-              <li>Uñas de Soft gel talla s - 32,00 €</li>
-              <li>Soft gel talla M - 36,00 €</li>
-              <li>Soft gel talla L - 42,00 €</li>
-              <li>Uñas polygel talla M - 38,00 €</li>
-              <li>Esmaltado semipermanente en pies - 20,00€</li>
-              <li>Limado y corte de uñas - 8,00 €</li>
-              <li>Decoración de uña - 2,00 €</li>
-              <li>Cambios de estructura de uña - 3,00 €</li>
+              <li>
+                Manicura Semipermanente – €20
+                <br><small>Limado y corte, retirada de cutículas y esmaltado semipermanente para acabado duradero.</small>
+              </li>
+              <li>
+                Manicura Esmaltado tradicional – €15
+                <br><small>Cuidados básicos y esmaltado tradicional para un acabado clásico.</small>
+              </li>
+              <li>
+                Manicura rusa – €15
+                <br><small>Limpieza en profundidad con torno y fresas para una uña perfectamente higienizada. Sin esmalte.</small>
+              </li>
+              <li>
+                Manicura Rusa + semipermanente – €35
+                <br><small>Manicura rusa seguida de esmaltado semipermanente para mayor duración y limpieza.</small>
+              </li>
+              <li>
+                Manicura Rusa + esmaltado tradicional – €25
+                <br><small>Manicura profunda con acabado de esmalte tradicional.</small>
+              </li>
+              <li>
+                Manicura semipermanente con nivelación – €30
+                <br><small>Base de refuerzo para nivelar la uña y esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Manicura Rusa + nivelación – €40
+                <br><small>Manicura rusa con trabajo de nivelación para un acabado liso y uniforme.</small>
+              </li>
+
+              <li>
+                Soft gel S con retiro – €40
+                <br><small>Retiro previo y aplicación de tips soft gel talla S con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel M con retiro – €42
+                <br><small>Retiro y colocación de tips soft gel talla M con acabado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel L con retiro – €46
+                <br><small>Retiro y aplicación de tips soft gel talla L con esmaltado semipermanente.</small>
+              </li>
+              <li>
+                Soft gel S sin retiro – €38
+                <br><small>Aplicación de tips soft gel talla S sin retirar trabajos anteriores.</small>
+              </li>
+              <li>
+                Soft gel M sin retiro – €40
+                <br><small>Aplicación de tips soft gel talla M sin retiro previo.</small>
+              </li>
+              <li>
+                Soft gel L sin retiro – €42
+                <br><small>Aplicación de tips soft gel talla L sin retiro previo.</small>
+              </li>
+
+              <li>
+                Retoque soft gel – €35
+                <br><small>Relleno y mantenimiento del soft gel para recuperar forma y acabado.</small>
+              </li>
+              <li>
+                Retiro semipermanente – €10
+                <br><small>Eliminación segura del esmalte semipermanente con métodos químicos y limado suave.</small>
+              </li>
+              <li>
+                Retiro soft gel – €15
+                <br><small>Retiro controlado de tips soft gel mediante disolución y limado protegido.</small>
+              </li>
+              <li>
+                Retiro acrílico – €20
+                <br><small>Eliminación mecánica del acrílico con limado profesional para preservar la uña natural.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra manicura</strong></summary>
+            <ul>
+              <li>Decoración simple – €3
+                <br><small>Detalles sencillos para personalizar la manicura.</small>
+              </li>
+              <li>Decoración intermedia – €7
+                <br><small>Diseños con más detalle y variedad de técnicas.</small>
+              </li>
+              <li>Decoración avanzada – €12
+                <br><small>Nail art complejo con materiales y acabados especiales.</small>
+              </li>
+              <li>Reconstrucción de una uña – €5
+                <br><small>Reconstrucción puntual con acrílico o gel para restaurar la uña.</small>
+              </li>
+              <li>Arreglo de uña semipermanente – €3
+                <br><small>Reparación rápida de manicura semipermanente en una uña.</small>
+              </li>
+              <li>Cambio de estructura – €3
+                <br><small>Cambio de la forma estética de la uña según preferencia.</small>
+              </li>
+              <li>Extra de decoración – €5
+                <br><small>Aplicación de charms, cristales o elementos decorativos.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pedicura</strong></summary>
             <ul>
-              <li>Esmaltado semipermanente - 20,00€</li>
+              <li>Pedicura básica semipermanente – €22
+                <br><small>Cuidados básicos y esmaltado semipermanente en pies.</small>
+              </li>
+              <li>Pedicura básica tradicional – €17
+                <br><small>Pedicura clásica con esmaltado tradicional y cuidados esenciales.</small>
+              </li>
+              <li>Pedicura completa semipermanente – €45
+                <br><small>Exfoliación, limpieza profunda y esmaltado semipermanente para pies renovados.</small>
+              </li>
+              <li>Pedicura completa tradicional – €35
+                <br><small>Limpieza y tratamiento completo con exfoliación y esmaltado tradicional.</small>
+              </li>
+              <li>Retiro pedicura semipermanente – €8
+                <br><small>Eliminación completa del esmaltado semipermanente en pies.</small>
+              </li>
             </ul>
           </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Extra pedicura</strong></summary>
+            <ul>
+              <li>Reconstrucción de una uña – €5
+                <br><small>Reconstrucción con acrílico o gel para uñas de los pies dañadas.</small>
+              </li>
+            </ul>
+          </details>
+
+          <details class="servicios-rubro">
+            <summary><strong>Cejas</strong></summary>
+            <ul>
+              <li>Brow lamination – €25
+                <br><small>Laminado y peinado para cejas con acabado duradero y ordenado.</small>
+              </li>
+              <li>Tinte de ceja – €15
+                <br><small>Coloración para igualar y realzar el tono del vello.</small>
+              </li>
+              <li>Depilación de cejas – €10
+                <br><small>Modelado y depilación para definir la forma ideal según el rostro.</small>
+              </li>
+              <li>Depilación de cejas + tinte – €20
+                <br><small>Combinación de diseño y color para un acabado completo.</small>
+              </li>
+            </ul>
+          </details>
+
           <details class="servicios-rubro">
             <summary><strong>Pestañas</strong></summary>
             <ul>
-              <li>Lifthing de pestañas - 35,00 €</li>
+              <li>Lifting de pestañas – €38
+                <br><small>Rizado y fijación profesional para realzar la curva natural de las pestañas.</small>
+              </li>
+              <li>Lifting de pestañas + tinte de pestañas – €42
+                <br><small>Rizado y coloración para una mirada más intensa sin necesidad de máscara.</small>
+              </li>
+              <li>Tinte de pestañas – €12
+                <br><small>Coloración de las pestañas para un tono homogéneo y definido.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Cejas y Depilación Facial</strong></summary>
+            <summary><strong>Depilación</strong></summary>
             <ul>
-              <li>Depilación con cera de axilas - 15,00 €</li>
-              <li>Depilación de cejas con cera - 15,00 €</li>
-              <li>Depilación de labio superior - 15,00 €</li>
-              <li>Depilacion de barbilla con cera - 15,00 €</li>
-              <li>Laminado de cejas - 30,00 €</li>
+              <li>Cejas + labio superior – €15
+                <br><small>Depilación facial combinada con cera y pinza para acabado impecable.</small>
+              </li>
+              <li>Mentón – €10
+                <br><small>Eliminación de vello en el área del mentón con técnicas cuidadosas.</small>
+              </li>
+              <li>Mentón + labio superior – €15
+                <br><small>Servicio combinado para depilación facial puntual.</small>
+              </li>
+              <li>Labio superior – €10
+                <br><small>Depilación del labio superior con métodos suaves para evitar irritación.</small>
+              </li>
+              <li>Facial completo – €20
+                <br><small>Depilación de cejas, labio superior y mentón para un acabado facial limpio.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Facial</strong></summary>
+            <summary><strong>Faciales</strong></summary>
             <ul>
-              <li>Dermapen con acido hialuronico - 50,00 €</li>
-              <li>Dermaplaning Cosmiatrico - 40,00 €</li>
-              <li>Dermapen con vitamina C - 50,00 €</li>
-              <li>Hidra Lips Glow con Acido Hialuronico - 30,00 €</li>
-              <li>Yoga Facial - 30,00 €</li>
-              <li>Facial Para Pieles Sensibles o Rosacea - 35,00 €</li>
-              <li>Limpieza Facial Profunda - 45,00 €</li>
-              <li>Exosomas Anti Age - 55,00 €</li>
-              <li>Exfoliacion de Espalda - 45,00 €</li>
+              <li>Limpieza facial profunda – €40
+                <br><small>Limpieza, exfoliación, extracción de impurezas, tonificación e hidratación final.</small>
+              </li>
+              <li>Tratamiento hidratante – €30
+                <br><small>Aplicación de productos humectantes para recuperar la hidratación y confort de la piel.</small>
+              </li>
+              <li>Yoga facial – €30
+                <br><small>Ejercicios y masajes faciales para estimular la circulación y tonificar el rostro.</small>
+              </li>
+              <li>Dermapen con Vitamina C – €50
+                <br><small>Microneedling combinado con vitamina C para mejorar luminosidad y textura.</small>
+              </li>
+              <li>Dermapen con Ácido Hialurónico – €50
+                <br><small>Microneedling con aporte de ácido hialurónico para hidratación y firmeza.</small>
+              </li>
+              <li>Dermaplaning Cosmiátrico – €40
+                <br><small>Exfoliación mecánica que elimina vello y células muertas para una piel más suave.</small>
+              </li>
+              <li>Hidra Lips Glow con Ácido Hialurónico – €30
+                <br><small>Hidratación y definición de labios con ácido hialurónico para brillo y suavidad.</small>
+              </li>
+              <li>Exosomas Anti-Age – €55
+                <br><small>Tratamiento regenerativo con exosomas para estimular colágeno y mejorar textura.</small>
+              </li>
+              <li>Exfoliación de espalda – €40
+                <br><small>Exfoliación corporal para eliminar células muertas y renovar la piel de la espalda.</small>
+              </li>
             </ul>
           </details>
+
           <details class="servicios-rubro">
-            <summary><strong>Masajes y Spa</strong></summary>
+            <summary><strong>Estética</strong></summary>
             <ul>
-              <li>Masaje con Piedras Calientes - 35,00 €</li>
-              <li>Maderoterapia - 40,00 €</li>
-              <li>Masaje Para La Caída del Cabello - 35,00 €</li>
-              <li>Masaje Relajante - 40,00 €</li>
-              <li>Masaje Anti Celulitis - 40,00 €</li>
-              <li>Day Spa - 60,00 €</li>
+              <li>Spa Day: masaje facial y corporal – €60
+                <br><small>Combinación de masaje relajante y facial hidratante para desconectar y revitalizar.</small>
+              </li>
+              <li>Masaje anticelulitis – €40
+                <br><small>Masaje técnico que ayuda a activar circulación y mejorar la apariencia de la piel.</small>
+              </li>
+              <li>Masaje relajante – €40
+                <br><small>Masaje corporal con maniobras suaves para aliviar tensión y relajación general.</small>
+              </li>
+              <li>Masaje capilar anticaída – €35
+                <br><small>Masaje del cuero cabelludo con productos específicos para estimular el folículo.</small>
+              </li>
+              <li>Masaje con piedras calientes – €35
+                <br><small>Terapia de calor con piedras volcánicas para relajar la musculatura y mejorar circulación.</small>
+              </li>
+              <li>Maderoterapia corporal – €40
+                <br><small>Técnica con herramientas de madera para moldear y activar la circulación corporal.</small>
+              </li>
             </ul>
           </details>
+
         </div>
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div>
       <img src="./assets/img/logo-footer.png" alt="The Beauty Club" class="footer__logo">
@@ -218,6 +778,7 @@
         <span class="footer__ig-text">@thebeautyclub.tbc</span>
       </a>
     </div>
+
     <div class="footer__info">
       <div class="footer__block">
         <div class="footer__title">Bilbao</div>
