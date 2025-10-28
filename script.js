@@ -33,26 +33,26 @@ function showWidget(divId, widgetUrl) {
 
 // Hero fade-in effect on scroll AND fade out when scrolling down
 window.addEventListener('scroll', () => {
-  const heroTitle = document.querySelector('.hero__title');
-  if (!heroTitle) return;
+  const heroLogo = document.querySelector('.hero__logo');
+  if (!heroLogo) return;
   // Fade in when reaches viewport, fade out as you scroll
-  const rect = heroTitle.getBoundingClientRect();
+  const rect = heroLogo.getBoundingClientRect();
   const scrollY = window.scrollY;
   const fadeEnd = 200;
   let opacity = 1;
   if (scrollY > 0) {
     opacity = Math.max(0, 1 - scrollY / fadeEnd);
   }
-  heroTitle.style.opacity = opacity;
+  heroLogo.style.opacity = opacity;
   // Keep fade-in class if you want an initial animation
   if (rect.top < window.innerHeight - 100) {
-    heroTitle.classList.add('visible');
+    heroLogo.classList.add('visible');
   }
 });
 window.addEventListener('DOMContentLoaded', () => {
-  const heroTitle = document.querySelector('.hero__title');
-  if (heroTitle) {
-    setTimeout(() => heroTitle.classList.add('visible'), 400);
+  const heroLogo = document.querySelector('.hero__logo');
+  if (heroLogo) {
+    setTimeout(() => heroLogo.classList.add('visible'), 400);
   }
 });
 // Menú hamburguesa móvil

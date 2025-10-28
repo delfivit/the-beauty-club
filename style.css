@@ -249,10 +249,12 @@ main {
   justify-content: center;
 }
 .hero__logo {
-  height: 600px;
-  width: auto;
+  width: 100%;
+  max-width: 600px; /* tamaño máximo en pantallas grandes */
+  height: auto; /* mantiene la proporción */
+  object-fit: contain;
 }
-.hero__title.visible {
+.hero__logo {
   opacity: 1;
   transform: translateY(0);
 }
