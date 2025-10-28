@@ -801,8 +801,8 @@ section {
 
 @media (max-width: 768px) {
   .hero__logo {
-    max-width: 360px;
-    width: 90%;
+    max-width: 500px;
+    width: 95%;
   }
 
   .hero__actions {
