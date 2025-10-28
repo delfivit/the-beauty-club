@@ -9,11 +9,16 @@
   --color-title-dark: #7f0e0e;
   --color-title-accent: #d48b71;
   --font-outfit: 'Outfit SemiBold', sans-serif;
+  --font-outfit-regular: 'Outfit Regular', sans-serif;
   --font-butler: 'Butler Bold', serif;
   --font-quentin: 'Quentin', cursive;
   --font-archeron: 'Archeron Pro Stencil Bold', serif;
 }
 
+@font-face {
+  font-family: 'Outfit Regular';
+  src: url('./assets/fonts/Outfit-Regular.ttf') format('truetype');
+}
 @font-face {
   font-family: 'Outfit SemiBold';
   src: url('./assets/fonts/Outfit-SemiBold.ttf') format('truetype');
@@ -33,7 +38,7 @@
 
 body {
   margin: 0;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   background: var(--color-section-white);
   color: var(--color-title-dark);
 }
@@ -140,7 +145,7 @@ a {
   margin-bottom: 18px;
   font-size: 1.15rem;
   color: var(--color-title-dark);
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   font-weight: 600;
   text-align: left; /* <-- Alinea a la izquierda en mobile */
   display: block;
@@ -189,7 +194,7 @@ a {
 }
 .footer__ig-text {
   color: #8a1c1c;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: 1px;
@@ -217,7 +222,7 @@ a {
 .footer__contact {
   font-size: 16px;
   margin-bottom: 7px;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   display: block;
 }
 .footer__contact.tel {
@@ -243,16 +248,9 @@ main {
   align-items: center;
   justify-content: center;
 }
-.hero__title {
-  font-size: 10vw;
-  font-family: var(--font-archeron);
-  line-height: 0.80;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-  margin-top: 6px;
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s, transform 0.9s;
+.hero__logo {
+  height: 600px;
+  width: auto;
 }
 .hero__title.visible {
   opacity: 1;
@@ -363,14 +361,14 @@ section {
   font-size: 1.12rem;
   margin-bottom: 16px;
   color: #8a1c1c;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   justify-content: flex-start;
   width: 100%;
 }
 
 .local-text {
   font-weight: normal;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
 }
 
 .icon-location,
@@ -557,7 +555,7 @@ section {
 .blog__text {
   font-size: 1.18rem;
   color: var(--color-title-accent);
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
   font-weight: 600;
   text-decoration: underline;
   margin-bottom: 8px;
@@ -678,7 +676,7 @@ section {
 .servicios-rubro li {
   margin-bottom: 7px;
   font-weight: 400;
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit-regular);
 }
 
 .servicios-rubro strong {
