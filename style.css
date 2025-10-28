@@ -798,3 +798,23 @@ section {
     margin-top: 8px;
   }
 }
+@media (max-width: 768px) {
+  .hero__logo {
+    max-width: 300px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero__btn {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero__logo {
+    max-width: 600px;
+  }
+}
