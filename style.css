@@ -250,7 +250,7 @@ main {
 }
 .hero__logo {
   width: 100%;
-  max-width: 600px; /* tamaño máximo en pantallas grandes */
+  max-width: 650px; /* tamaño máximo en pantallas grandes */
   height: auto; /* mantiene la proporción */
   object-fit: contain;
 }
