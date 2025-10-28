@@ -798,9 +798,11 @@ section {
     margin-top: 8px;
   }
 }
+
 @media (max-width: 768px) {
   .hero__logo {
-    max-width: 300px;
+    max-width: 360px;
+    width: 90%;
   }
 
   .hero__actions {
