@@ -444,31 +444,49 @@ section {
 .inspiracion {
   background: var(--color-section-white);
   padding: 60px 24px 80px 24px;
-  margin-top: 0px;
 }
+
 .inspiracion__title {
   font-family: var(--font-butler);
   font-size: 2.7rem;
   color: var(--color-title-dark);
   text-align: center;
   margin-bottom: 32px;
-  margin-top: 0px;
   line-height: 1.1;
 }
-.inspiracion__carousel {
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-  align-items: center;
-  overflow-x: auto;
-  padding-bottom: 16px;
+
+/* Carrusel sin botones */
+.carousel-container {
+  position: relative;
+  max-width: 90%;
+  margin: 0 auto;
+  overflow: hidden; /* oculta el overflow y la barra de scroll */
 }
-.inspiracion__img {
-  width: 180px;
-  height: 180px;
+
+.carousel-track {
+  display: flex;
+  will-change: transform;
+  /* no scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+
+.carousel-track img {
+  width: 280px;
+  height: 280px;
   object-fit: cover;
   border-radius: 16px;
   box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  margin: 0 12px;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .carousel-track img {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 /* Testimonios Section */

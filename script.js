@@ -1,17 +1,110 @@
-// Carrusel de inspiración (scroll automático)
-const carousel = document.querySelector('.inspiracion__carousel');
-if (carousel) {
-  let scrollAmount = 0;
-  setInterval(() => {
-    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth) {
-      carousel.scrollLeft = 0;
-      scrollAmount = 0;
-    } else {
-      scrollAmount += 200;
-      carousel.scrollLeft = scrollAmount;
+// Carrusel autoplay infinito (sin botones)
+// Espera a que las imágenes carguen para medir correctamente.
+(function () {
+  const track = document.querySelector('.carousel-track');
+  if (!track) return;
+
+  // duplicar contenido para poder hacer loop infinito
+  track.innerHTML = track.innerHTML + track.innerHTML;
+  let slides = Array.from(track.children);
+  let index = 0;
+  let slideWidth = 0;
+  let autoSlide;
+
+  function getSlideWidth() {
+    const s = slides[0];
+    const style = window.getComputedStyle(s);
+    const marginLeft = parseFloat(style.marginLeft) || 0;
+    const marginRight = parseFloat(style.marginRight) || 0;
+    return s.getBoundingClientRect().width + marginLeft + marginRight;
+  }
+
+  function setInitialPosition() {
+    // poner en 0 (primer slide original)
+    track.style.transition = 'none';
+    track.style.transform = `translateX(0px)`;
+    index = 0;
+    // forzar reflow
+    void track.offsetWidth;
+  }
+
+  function moveNext() {
+    // si estamos justo al final de la mitad, hacemos un reinicio invisible antes de avanzar
+    if (index >= slides.length / 2) {
+      track.style.transition = 'none';
+      index = 0;
+      track.style.transform = `translateX(0px)`;
+      void track.offsetWidth; // reflow
     }
-  }, 2500);
-}
+
+    index++;
+    track.style.transition = 'transform 0.6s ease-in-out';
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+
+    // si acabamos de avanzar al límite de la mitad, al terminar la transición reseteamos a 0
+    if (index >= slides.length / 2) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        index = 0;
+        track.style.transform = `translateX(0px)`;
+        void track.offsetWidth;
+      }, 610); // un poco más que la transición (600ms) para asegurar
+    }
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoSlide = setInterval(moveNext, 2500);
+  }
+
+  function stopAuto() {
+    if (autoSlide) clearInterval(autoSlide);
+  }
+
+  // inicializar cuando todas las imágenes estén cargadas
+  const imgs = Array.from(track.querySelectorAll('img'));
+  let loaded = 0;
+  imgs.forEach(img => {
+    if (img.complete) {
+      loaded++;
+    } else {
+      img.addEventListener('load', () => {
+        loaded++;
+        if (loaded === imgs.length) initCarousel();
+      });
+      img.addEventListener('error', () => {
+        loaded++;
+        if (loaded === imgs.length) initCarousel();
+      });
+    }
+  });
+
+  // si todas ya estaban completas
+  if (loaded === imgs.length) initCarousel();
+
+  function initCarousel() {
+    slides = Array.from(track.children);
+    slideWidth = getSlideWidth();
+    setInitialPosition();
+    startAuto();
+  }
+
+  // recalcular al redimensionar
+  window.addEventListener('resize', () => {
+    // detener para recalcular sin animaciones
+    track.style.transition = 'none';
+    slideWidth = getSlideWidth();
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    void track.offsetWidth;
+  });
+
+  // opción: pausar al pasar el mouse (si querés descomentar)
+  /*
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+  */
+})();
+
 
 // Booksy widget loader
 function showWidget(divId, widgetUrl) {
