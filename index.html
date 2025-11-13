@@ -5,6 +5,30 @@
   <title>The Beauty Club</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1RT8JE2MZ8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1RT8JE2MZ8');
+  </script>
+
+  <!-- Metricool -->
+  <script>
+    function loadScript(a){
+      var b=document.getElementsByTagName("head")[0],
+          c=document.createElement("script");
+      c.type="text/javascript";
+      c.src="https://tracker.metricool.com/resources/be.js";
+      c.onreadystatechange=a;
+      c.onload=a;
+      b.appendChild(c);
+    }
+    loadScript(function(){
+      beTracker.t({hash:"770dda1b17b5438aef71e4462964c5d4"});
+    });
+  </script>
   <script defer src="script.js"></script>
 </head>
 <body>
