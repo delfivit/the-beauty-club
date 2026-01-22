@@ -170,3 +170,44 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
+
+// ===========================
+// POP-UP PROMOCIÓN
+// ===========================
+function closePopup() {
+  const popup = document.getElementById('promoPopup');
+  if (popup) {
+    popup.classList.remove('show');
+    // Guardar en localStorage que el usuario ya vio el popup
+    localStorage.setItem('promoPopupSeen', 'true');
+  }
+}
+
+// Mostrar el popup cuando carga la página (solo si no lo ha visto)
+window.addEventListener('load', function() {
+  const popup = document.getElementById('promoPopup');
+  const hasSeenPopup = localStorage.getItem('promoPopupSeen');
+  
+  // Mostrar el popup solo si el usuario no lo ha visto antes
+  // Si quieres que se muestre siempre, comenta la condición: if (!hasSeenPopup)
+  if (popup && !hasSeenPopup) {
+    setTimeout(function() {
+      popup.classList.add('show');
+    }, 500); // Espera 500ms después de cargar la página
+  }
+});
+
+// Cerrar popup al hacer click fuera del contenido
+document.addEventListener('click', function(e) {
+  const popup = document.getElementById('promoPopup');
+  if (popup && e.target === popup) {
+    closePopup();
+  }
+});
+
+// Cerrar popup con la tecla ESC
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closePopup();
+  }
+});
