@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://thebeautyclub.es/sitemap.xml
+
+# Disallow admin or private directories if any
+# Disallow: /admin/
+
+# Crawl-delay
+Crawl-delay: 1
