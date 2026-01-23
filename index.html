@@ -112,6 +112,16 @@
       </div>
     </section>
 
+    <!-- Sección descriptiva para SEO y LLMs -->
+    <section class="about-intro" style="max-width: 1000px; margin: 40px auto; padding: 0 20px; text-align: center;">
+      <p style="font-size: 18px; line-height: 1.8; color: #666; font-family: var(--font-outfit-regular);">
+        <strong style="color: var(--color-title-dark);">The Beauty Club</strong> es el centro de belleza líder en <strong>manicura, pedicura y extensiones de pestañas</strong> en el norte y sur de España. 
+        Con salones en <strong>Bilbao, Cádiz y Málaga</strong>, ofrecemos servicios profesionales de <strong>manicura semipermanente, manicura rusa, pedicura spa, extensiones de pestañas pelo a pelo, permanente de pestañas y lifting de pestañas</strong>. 
+        Nuestros expertos utilizan productos de alta calidad y técnicas innovadoras para garantizar resultados duraderos y espectaculares. 
+        Reserva tu cita online y descubre por qué somos la mejor opción para el cuidado de tus uñas y pestañas.
+      </p>
+    </section>
+
     <section class="ubicaciones">
       <h2 class="ubicaciones__title">Estamos en Bilbao, Málaga y Cádiz</h2>
       <div class="ubicaciones__subtitle">pero vuestra esencia es la misma en cada lugar</div>
@@ -304,21 +314,77 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "The Beauty Club",
+    "alternateName": "TBC",
     "url": "https://thebeautyclub.es",
     "logo": "https://thebeautyclub.es/assets/img/logo-header.png",
     "image": "https://thebeautyclub.es/assets/img/logo-header.png",
-    "description": "Centro de belleza especializado en manicura, pedicura, extensiones de pestañas y permanente de pestañas en Bilbao, Cádiz y Málaga",
+    "description": "The Beauty Club es el centro de belleza líder en manicura, pedicura y extensiones de pestañas en Bilbao, Cádiz y Málaga. Especialistas en manicura semipermanente, manicura rusa, pedicura spa, extensiones de pestañas pelo a pelo, permanente de pestañas y lifting de pestañas.",
+    "foundingDate": "2020",
+    "slogan": "Tu belleza, nuestra pasión",
     "contactPoint": [
       {
         "@type": "ContactPoint",
         "telephone": "+34-660-252-523",
         "contactType": "Customer Service",
         "areaServed": "ES",
-        "availableLanguage": "Spanish"
+        "availableLanguage": "Spanish",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bilbao",
+          "addressRegion": "País Vasco"
+        }
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34-656-704-304",
+        "contactType": "Customer Service",
+        "areaServed": "ES",
+        "availableLanguage": "Spanish",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Cádiz",
+          "addressRegion": "Andalucía"
+        }
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+34-674-039-794",
+        "contactType": "Customer Service",
+        "areaServed": "ES",
+        "availableLanguage": "Spanish",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Málaga",
+          "addressRegion": "Andalucía"
+        }
       }
     ],
     "sameAs": [
       "https://www.instagram.com/thebeautyclub.tbc/"
+    ],
+    "knowsAbout": [
+      "Manicura",
+      "Pedicura",
+      "Extensiones de pestañas",
+      "Permanente de pestañas",
+      "Manicura semipermanente",
+      "Manicura rusa",
+      "Uñas acrílicas",
+      "Lifting de pestañas"
+    ],
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Bilbao"
+      },
+      {
+        "@type": "City",
+        "name": "Cádiz"
+      },
+      {
+        "@type": "City",
+        "name": "Málaga"
+      }
     ]
   }
   </script>
@@ -329,10 +395,11 @@
     "@context": "https://schema.org",
     "@type": "BeautySalon",
     "name": "The Beauty Club",
-    "image": "https://thebeautyclub.es/assets/img/THEBEAUTYCLUB-LOGO-09.png",
-    "description": "Centro de belleza especializado en manicura, pedicura, extensiones de pestañas y permanente de pestañas en Bilbao, Cádiz y Málaga",
+    "image": "https://thebeautyclub.es/assets/img/logo-header.png",
+    "description": "Centro de belleza especializado en manicura, pedicura, extensiones de pestañas y permanente de pestañas en Bilbao, Cádiz y Málaga. Ofrecemos manicura semipermanente, manicura rusa, pedicura spa, extensiones de pestañas pelo a pelo, permanente de pestañas y lifting de pestañas.",
     "priceRange": "€€",
-    "servesCuisine": "",
+    "paymentAccepted": "Cash, Credit Card, Debit Card",
+    "currenciesAccepted": "EUR",
     "address": [
       {
         "@type": "PostalAddress",
@@ -419,6 +486,88 @@
         }
       ]
     }
+  }
+  </script>
+
+  <!-- Schema.org FAQPage para LLMs y búsquedas -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿En cuánto tiempo hacen las uñas semipermanentes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En The Beauty Club hacemos las uñas semipermanentes en aproximadamente 30 minutos. Nuestro servicio express incluye retiro, limado y esmaltado en un solo color."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto duran las uñas semipermanentes?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Las uñas semipermanentes duran aproximadamente 3 semanas sin desconcharse ni perder brillo."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué significa pedicura spa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "La pedicura spa es un tratamiento completo donde sacamos callosidades, limamos, hidratamos y dejamos los pies suaves y cuidados."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué incluye el servicio express?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "El servicio Semipermanente Express incluye retiro de semipermanente anterior, limado y esmaltado semipermanente en un solo color. Precio: Bilbao 13,90€, Cádiz 13,90€, Málaga 11,90€."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde estáis ubicados?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Beauty Club tiene tres centros: Bilbao en C/ Máximo Aguirre 11 bis, Cádiz en Avenida Cayetano del Toro 33, y Málaga en Calle Antonio Luis Carrión N9 local 2."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Ofrecéis servicio de extensiones de pestañas?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí, ofrecemos extensiones de pestañas pelo a pelo y permanente de pestañas en nuestros tres centros de Bilbao, Cádiz y Málaga."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde puedo hacerme la manicura en Bilbao?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Podéis haceros la manicura en The Beauty Club Bilbao, ubicado en C/ Máximo Aguirre 11 bis. Ofrecemos manicura semipermanente, manicura rusa, uñas acrílicas y más. Reservas: 660 252 523."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde hacerse la manicura en Cádiz?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "En The Beauty Club Cádiz, ubicado en Avenida Cayetano del Toro 33, ofrecemos manicura semipermanente, manicura rusa y uñas acrílicas. Teléfono: 656 704 304."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Dónde puedo hacerme la manicura en Málaga?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Beauty Club Málaga está en Calle Antonio Luis Carrión N9 local 2. Ofrecemos manicura semipermanente, manicura rusa y todos los servicios de uñas. Reservas: 674 039 794."
+        }
+      }
+    ]
   }
   </script>
 </body>
