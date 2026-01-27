@@ -183,14 +183,12 @@ function closePopup() {
   }
 }
 
-// Mostrar el popup cuando carga la página (solo si no lo ha visto)
+// Mostrar el popup cuando carga la página
 window.addEventListener('load', function() {
   const popup = document.getElementById('promoPopup');
-  const hasSeenPopup = localStorage.getItem('promoPopupSeen');
   
-  // Mostrar el popup solo si el usuario no lo ha visto antes
-  // Si quieres que se muestre siempre, comenta la condición: if (!hasSeenPopup)
-  if (popup && !hasSeenPopup) {
+  // Mostrar el popup siempre
+  if (popup) {
     setTimeout(function() {
       popup.classList.add('show');
     }, 500); // Espera 500ms después de cargar la página
