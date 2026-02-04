@@ -960,16 +960,17 @@ section {
   font-size: 32px;
   color: var(--color-title-dark);
   margin: 0 0 10px 0;
-  text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .popup-subtitle {
-  font-family: var(--font-quentin);
-  font-size: 36px;
+  font-family: var(--font-outfit);
+  font-size: 20px;
   color: var(--color-title-accent);
   margin: 0;
-  font-weight: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .popup-prices {
@@ -1004,11 +1005,61 @@ section {
 
 .popup-description {
   font-family: var(--font-outfit-regular);
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.popup-description strong {
+  color: var(--color-btn);
+  font-weight: 600;
+}
+
+.popup-conditions {
+  background: #fef5f4;
+  border-left: 4px solid var(--color-title-accent);
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.popup-conditions-title {
+  font-family: var(--font-outfit);
   font-size: 14px;
+  font-weight: 600;
+  color: var(--color-title-dark);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.popup-conditions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.popup-conditions-list li {
+  font-family: var(--font-outfit-regular);
+  font-size: 13px;
   color: #666;
   line-height: 1.6;
-  margin: 20px 0 30px 0;
-  padding: 0 10px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.popup-conditions-list li:before {
+  content: "•";
+  color: var(--color-title-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 16px;
 }
 
 .popup-btn {
@@ -1040,7 +1091,7 @@ section {
   }
 
   .popup-subtitle {
-    font-size: 30px;
+    font-size: 16px;
   }
 
   .popup-prices {
@@ -1056,7 +1107,20 @@ section {
   }
 
   .popup-description {
+    font-size: 14px;
+  }
+
+  .popup-conditions {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .popup-conditions-title {
     font-size: 13px;
+  }
+
+  .popup-conditions-list li {
+    font-size: 12px;
   }
 
   .popup-btn {
