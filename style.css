@@ -1005,7 +1005,7 @@ section {
 
 .popup-description {
   font-family: var(--font-outfit-regular);
-  font-size: 15px;
+  font-size: 18px;
   color: #555;
   line-height: 1.7;
   margin: 10px 0;
@@ -1031,20 +1031,20 @@ section {
 .popup-conditions {
   background: transparent;
   border-left: none;
-  padding: 15px 10px;
-  margin: 20px 0;
+  padding: 10px 10px;
+  margin: 15px 0;
   border-radius: 0;
   text-align: left;
 }
 
 .popup-conditions-title {
   font-family: var(--font-outfit-regular);
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 400;
-  color: #999;
-  margin: 0 0 8px 0;
+  color: #aaa;
+  margin: 0 0 4px 0;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .popup-conditions-list {
@@ -1055,21 +1055,21 @@ section {
 
 .popup-conditions-list li {
   font-family: var(--font-outfit-regular);
-  font-size: 10px;
-  color: #aaa;
-  line-height: 1.5;
-  margin-bottom: 6px;
-  padding-left: 15px;
+  font-size: 8px;
+  color: #bbb;
+  line-height: 1.2;
+  margin-bottom: 0;
+  padding-left: 0;
   position: relative;
+  display: inline;
 }
 
 .popup-conditions-list li:before {
-  content: "•";
-  color: #ccc;
-  font-weight: normal;
-  position: absolute;
-  left: 0;
-  font-size: 12px;
+  content: "";
+}
+
+.popup-conditions-list li:after {
+  content: " ";
 }
 
 .popup-btn {
@@ -1117,7 +1117,7 @@ section {
   }
 
   .popup-description {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .popup-tagline {
@@ -1126,16 +1126,16 @@ section {
   }
 
   .popup-conditions {
-    padding: 10px;
-    margin: 15px 0;
+    padding: 8px;
+    margin: 12px 0;
   }
 
   .popup-conditions-title {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .popup-conditions-list li {
-    font-size: 9px;
+    font-size: 7px;
   }
 
   .popup-btn {
