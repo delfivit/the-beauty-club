@@ -1037,6 +1037,16 @@ section {
   text-align: left;
 }
 
+.popup-conditions-text {
+  font-family: var(--font-outfit-regular);
+  font-size: 8px;
+  font-weight: 400;
+  color: #bbb;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+}
+
 .popup-conditions-title {
   font-family: var(--font-outfit-regular);
   font-size: 9px;
@@ -1128,6 +1138,10 @@ section {
   .popup-conditions {
     padding: 8px;
     margin: 12px 0;
+  }
+
+  .popup-conditions-text {
+    font-size: 7px;
   }
 
   .popup-conditions-title {
